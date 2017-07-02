@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font:14px/1.3 "微软雅黑";
+}
+#create{
+    margin: 10px;
+}
+.m-note{
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    background-color: rgb(255, 240, 70);
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.m-note .u-edit{
+    box-sizing: border-box;
+    width: 200px;
+    height: 250px;
+    padding: 10px;
+    outline: none;
+}
+.m-note:hover .u-close{
+    display: block;
+}
+.m-note .u-close{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    background: url(../img/btn-close.png) no-repeat;
+    display: none;
+}
+.m-note .m-time{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding:0 10px; 
+}
