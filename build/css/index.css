@@ -10,6 +10,8 @@ body{
 }
 .m-note{
     position: absolute;
+    left: 20px;
+    top: 70px;
     width: 200px;
     height: 250px;
     background-color: rgb(255, 240, 70);
@@ -34,6 +36,7 @@ body{
     top: -15px;
     background: url(../img/btn-close.png) no-repeat;
     display: none;
+    cursor: pointer;
 }
 .m-note .m-time{
     position: absolute;
