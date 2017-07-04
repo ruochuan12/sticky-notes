@@ -9,13 +9,13 @@ app.utils = {
         return (node || document).querySelector(selector);
     },
     formatTime: function(timeStamp) {
-        var Time = new Date(timeStamp);
-        var year = Time.getFullYear();
-        var month = Time.getMonth() + 1;
-        var date = Time.getDate();
-        var hour = Time.getHours();
-        var minute = Time.getMinutes();
-        var second = Time.getSeconds();
+        var time = new Date(timeStamp);
+        var year = time.getFullYear();
+        var month = time.getMonth() + 1;
+        var date = time.getDate();
+        var hour = time.getHours();
+        var minute = time.getMinutes();
+        var second = time.getSeconds();
         function to2bit(num){
             if (num >= 0 && num <= 9) {
                return 0 + '' + num;
@@ -23,8 +23,18 @@ app.utils = {
                 return num;
             }
         }
-        return year + to2bit(month) + to2bit(date) + ' ' + to2bit(hour) + ':' + to2bit(minute) + ':' + to2bit(second);
-    }
+        return year + '-' + to2bit(month) + '-' + to2bit(date) + ' ' + to2bit(hour) + ':' + to2bit(minute) + ':' + to2bit(second);
+    },
+    limitRange: function(note){
+        var style = null;
+        if(window.getComputedStyle) {
+            style = window.getComputedStyle(node, null);
+        }else{
+            style = node.currentStyle;
+        }
+        return style;
+    },
+    // 获取计算后的样式
 }
 // 数据存储到本地
 app.store = {
@@ -42,18 +52,22 @@ app.store = {
 (function (utils) {
     var $ = utils.$;
     var moveNote = null;
-    var startX = '';
-    var startY = '';
+    var startX;
+    var startY;
+    var maxZIndex = 0;
     var noteTpl = `
         <i class="u-close"></i>
         <div class="u-edit"  contenteditable="true"></div>
         <div class="m-time"><span>更新：</span><span class="u-timestamp">2017-07-02 15:09:02<span></div>`;
     // 创建便签
-    function Note() {
+    function Note(options) {
         var note = document.createElement('div');
         note.className = 'm-note';
         // debugger;
         note.innerHTML = noteTpl;
+        note.style.left = options.left + 'px';
+        note.style.top = options.top + 'px';
+        note.style.zIndex = options.zIndex + 'px';
         document.body.appendChild(note);
         this.note = note;
         this.updateTime();
@@ -76,26 +90,46 @@ app.store = {
     Note.prototype.addEvent = function() {
         let that = this;
         var btnClose = $('.u-close', this.note);
-        function handleCloseClick(e) {
-            console.log('close click', that.note);
-            btnClose.removeEventListener('click', handleCloseClick);
-            that.close(e);
-        }
-        function handleMousedown(e) {
-            console.log(e);
+        // 便签的 mousedown 事件
+        var handleMousedown = function (ev) {
+            console.log(ev);
             moveNote = that.note;
-            startX = e.clentX - that.note.offsetLeft;
-            startY = e.clentY - that.note.offsetTop;
-            console.log(that);
+            startX = ev.clientX - that.note.offsetLeft;
+            startY = ev.clientY - that.note.offsetTop;
             console.log('mousedown');
         }
+        that.note.addEventListener('mousedown', handleMousedown);
+        // 便签的 关闭 事件
+        var handleCloseClick = function (ev) {
+            console.log('close click', that.note);
+            // 关闭的同时移除事件
+            btnClose.removeEventListener('click', handleCloseClick);
+            that.note.removeEventListener('mousedown', handleMousedown);
+            that.close(ev);
+        }
         btnClose.addEventListener('click', handleCloseClick);
-        this.note.addEventListener('mousedown', handleMousedown);
     };
     document.addEventListener('DOMContentLoaded', function (e) {
-        var note = null;
-        var handleBtnClick = function() {
-            note = new Note();
+        var noteArr = [];
+        var handleBtnCreateClick = function() {
+            var options = {
+                left: Math.floor(Math.random() * (window.innerWidth-200)),
+                top: Math.floor(Math.random() * (window.innerHeight-250)),
+                zIndex: maxZIndex++
+            }
+            console.log(options);
+            noteArr.push(new Note(options));
+        };
+        var handleBtnRemoveClick = function() {
+            console.log('handleBtnRemoveClick');
+            console.log(noteArr);
+            if (noteArr.length> 0) {
+                noteArr.forEach(function(element) {
+                    console.log(element);
+                    element.close();
+                    noteArr = [];
+                }, this);
+            }
         };
         var handleMousemove = function(ev) {
             if (!moveNote) {
@@ -103,10 +137,18 @@ app.store = {
             }
             moveNote.style.left = ev.clientX - startX + 'px';
             moveNote.style.top = ev.clientY - startY + 'px';
-            console.log('move', ev);
+            // console.log('move', ev);
         };
-        $('#create').addEventListener('click', handleBtnClick);
+        var handleMouseup = function() {
+            if (!moveNote) {
+                return;
+            }
+            moveNote = null;
+        }
+        $('#create').addEventListener('click', handleBtnCreateClick);
+        $('#remove').addEventListener('click', handleBtnRemoveClick);
         document.addEventListener('mousemove',handleMousemove);
+        document.addEventListener('mouseup',handleMouseup);
         console.log($('.m-note .u-close'));
     });
 }(app.utils));
