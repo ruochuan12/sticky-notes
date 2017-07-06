@@ -40,8 +40,15 @@ app.utils = {
 // 数据存储到本地
 app.store = {
     __store_key: '__store_note',
-    set: function (value) {
-        window.localStorage.setItem(this.__store_key, value);
+    set: function (id, content) {
+        // debugger;
+        var notes = this.getNotes();
+        if (notes[id]) {
+            Object.assign(notes[id],content);
+        } else {
+            notes[id] = content
+        }
+        window.localStorage.setItem(this.__store_key, JSON.stringify(notes));
     },
     get: function () {
         var jsonStr = window.localStorage.getItem(this.__store_key);
@@ -51,7 +58,8 @@ app.store = {
         window.localStorage.removeItem(key);
     },
     getNotes: function(){
-        JSON.parse(window.localStorage.getItem(this.__store_key) || '{}');
+        // debugger;
+        return JSON.parse(window.localStorage.getItem(this.__store_key) || '{}');
     }
 };
 // 立即执行函数
@@ -71,6 +79,7 @@ app.store = {
         note.className = 'm-note';
         note.id = options.id || 'm-note-' + Date.now();
         note.innerHTML = noteTpl;
+        $('.u-edit', note).innerHTML = options.content || '';
         note.style.left = options.left + 'px';
         note.style.top = options.top + 'px';
         note.style.zIndex = options.zIndex + 'px';
@@ -117,13 +126,20 @@ app.store = {
             console.log('mousedown');
         }
         that.note.addEventListener('mousedown', handleMousedown);
+        var inputTimer;
         // 便签的 input 输入事件
+        var editNote = $('.u-edit', that.note);
         var handleInput = function () {
-            var inputTimer = setTimeout(function () {
-
+            clearTimeout(inputTimer);
+            inputTimer = setTimeout(function () {
+                // debugger;
+                store.set(that.note.id, {
+                    content: editNote.innerHTML,
+                    timeStamp: Date.now()
+                });
             }, 300);
         }
-        that.note.addEventListener('input', handleInput);
+        editNote.addEventListener('input', handleInput);
         // 便签的 关闭 事件
         var handleCloseClick = function (ev) {
             console.log('close click', that.note);
@@ -175,8 +191,13 @@ app.store = {
         $('#create').addEventListener('click', handleBtnCreate);
         $('#remove').addEventListener('click', handleBtnRemove);
         // 初始化便签
-        var dataNoteArr = store.getNotes();
-        console.log(dataNoteArr);
+        var notes = store.getNotes();
+        Object.keys(notes).forEach(function(id){
+            var options = notes[id];
+            new Note(Object.assign(options,{
+                id:id
+            }));
+        });
         document.addEventListener('mousemove', handleMousemove);
         document.addEventListener('mouseup', handleMouseup);
         console.log($('.m-note .u-close'));
