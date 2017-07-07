@@ -48,10 +48,10 @@ app.store = {
         } else {
             notes[id] = content
         }
-        window.localStorage.setItem(this.__store_key, JSON.stringify(notes));
+        localStorage[this.__store_key] = JSON.stringify(notes);
     },
     get: function () {
-        var jsonStr = window.localStorage.getItem(this.__store_key);
+        var jsonStr = window.localStorage[this.__store_key];
         return JSON.parse(jsonStr);
     },
     remove: function () {
@@ -59,7 +59,7 @@ app.store = {
     },
     getNotes: function(){
         // debugger;
-        return JSON.parse(window.localStorage.getItem(this.__store_key) || '{}');
+        return JSON.parse(localStorage[this.__store_key] || '{}');
     }
 };
 // 立即执行函数
@@ -91,17 +91,18 @@ app.store = {
     }
     // 便签保存
     Note.prototype.save = function () {
+        var that = this;
+        debugger;
         var dataStore = {
-            id: this.note.id,
-            options: {
-                zIndex: that.note.style.zIndex,
-                left: that.note.style.left,
-                top: that.note.style.top
-            },
-            content: that.note.innerHTML,
+            zIndex: that.note.style.zIndex,
+            left: that.note.offsetLeft,
+            // 弄清offsetLeft 和 left 的区别 前者只读，后者可读可写
+            // left: parseInt(that.note.style.left),
+            top: that.note.offsetTop,
+            content:$('.u-edit',that.note).innerHTML,
             timeStamp: Date.now()
         }
-        store.set('', JSON.stringify(dataStore));
+        store.set(this.note.id, dataStore);
     }
     // 便签关闭
     Note.prototype.close = function () {
@@ -158,7 +159,9 @@ app.store = {
                 top: Math.floor(Math.random() * (window.innerHeight - 250)),
                 zIndex: maxZIndex++
             }
-            noteArr.push(new Note(options));
+            var note = new Note(options);
+            note.save();
+            noteArr.push(note);
             console.log(noteArr);
         };
         var handleBtnRemove = function () {
@@ -186,6 +189,10 @@ app.store = {
             if (!moveNote) {
                 return;
             }
+            store.set(moveNote.id,{
+                left: moveNote.offsetLeft,
+                top: moveNote.offsetTop
+            });
             moveNote = null;
         }
         $('#create').addEventListener('click', handleBtnCreate);
