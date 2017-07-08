@@ -54,8 +54,10 @@ app.store = {
         var jsonStr = window.localStorage[this.__store_key];
         return JSON.parse(jsonStr);
     },
-    remove: function () {
-        window.localStorage.removeItem(key);
+    remove: function (id) {
+        var notes = this.getNotes();
+        delete notes[id];
+        localStorage[this.__store_key] = JSON.stringify(notes);
     },
     getNotes: function(){
         // debugger;
@@ -143,6 +145,7 @@ app.store = {
         editNote.addEventListener('input', handleInput);
         // 便签的 关闭 事件
         var handleCloseClick = function (ev) {
+            store.remove(that.note.id);
             console.log('close click', that.note);
             // 关闭的同时移除事件
             btnClose.removeEventListener('click', handleCloseClick);
