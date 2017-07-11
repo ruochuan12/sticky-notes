@@ -18,10 +18,10 @@ app.utils = {
         var second = time.getSeconds();
 
         function to2bit(num) {
-            if (num >= 0 && num <= 9) {
-                return 0 + '' + num;
-            } else {
+            if (num > 9) {
                 return num;
+            } else {
+                return '0' + num;
             }
         }
         return year + '-' + to2bit(month) + '-' + to2bit(date) + ' ' + to2bit(hour) + ':' + to2bit(minute) + ':' + to2bit(second);
@@ -84,17 +84,15 @@ app.store = {
         $('.u-edit', note).innerHTML = options.content || '';
         note.style.left = options.left + 'px';
         note.style.top = options.top + 'px';
-        note.style.zIndex = options.zIndex + 'px';
+        note.style.zIndex = options.zIndex;
         document.body.appendChild(note);
         this.note = note;
-        console.log(note);
         this.updateTime();
         this.addEvent();
     }
     // 便签保存
     Note.prototype.save = function () {
         var that = this;
-        debugger;
         var dataStore = {
             zIndex: that.note.style.zIndex,
             left: that.note.offsetLeft,
@@ -204,10 +202,14 @@ app.store = {
         var notes = store.getNotes();
         Object.keys(notes).forEach(function(id){
             var options = notes[id];
+            if (maxZIndex < options.zIndex) {
+                maxZIndex = options.zIndex;
+            }
             new Note(Object.assign(options,{
                 id:id
             }));
         });
+        maxZIndex += 1;
         document.addEventListener('mousemove', handleMousemove);
         document.addEventListener('mouseup', handleMouseup);
         console.log($('.m-note .u-close'));
