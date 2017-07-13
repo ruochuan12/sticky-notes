@@ -26,6 +26,7 @@ app.utils = {
         }
         return year + '-' + to2bit(month) + '-' + to2bit(date) + ' ' + to2bit(hour) + ':' + to2bit(minute) + ':' + to2bit(second);
     },
+    // TO DO 限制拖动范围
     limitRange: function (note) {
         var style = null;
         if (window.getComputedStyle) {
@@ -87,7 +88,7 @@ app.store = {
         note.style.zIndex = options.zIndex;
         document.body.appendChild(note);
         this.note = note;
-        this.updateTime();
+        this.updateTime(options.updateTimeStamp);
         this.addEvent();
     }
     // 便签保存
@@ -100,7 +101,7 @@ app.store = {
             // left: parseInt(that.note.style.left),
             top: that.note.offsetTop,
             content:$('.u-edit',that.note).innerHTML,
-            timeStamp: Date.now()
+            updateTimeStamp: that.updateTimeInMS
         }
         store.set(this.note.id, dataStore);
     }
@@ -109,10 +110,11 @@ app.store = {
         document.body.removeChild(this.note);
     }
     /// 便签更新时间
-    Note.prototype.updateTime = function () {
-        var nowTimeStamp = Date.now();
+    Note.prototype.updateTime = function (ms) {
+        var nowTimeStamp = ms || Date.now();
         var formatTimeStr = utils.formatTime(nowTimeStamp);
         $('.m-time .u-timestamp', this.note).innerHTML = formatTimeStr;
+        this.updateTimeInMS = nowTimeStamp;
     }
     Note.prototype.addEvent = function () {
         let that = this;
@@ -123,21 +125,29 @@ app.store = {
             moveNote = that.note;
             startX = ev.clientX - that.note.offsetLeft;
             startY = ev.clientY - that.note.offsetTop;
-            moveNote.style.zIndex = maxZIndex++;
+            if (moveNote.style.zIndex !== maxZIndex - 1) {
+                moveNote.style.zIndex = maxZIndex++;
+                store.set(moveNote.id,{
+                    zIndex: maxZIndex - 1
+                });
+            }
             console.log('mousedown');
         }
         that.note.addEventListener('mousedown', handleMousedown);
         var inputTimer;
         // 便签的 input 输入事件
         var editNote = $('.u-edit', that.note);
-        var handleInput = function () {
+        var handleInput = function (ev) {
+            console.log('handleInput');
+            var content = editNote.innerHTML;
             clearTimeout(inputTimer);
             inputTimer = setTimeout(function () {
-                // debugger;
+                var time = Date.now();
                 store.set(that.note.id, {
-                    content: editNote.innerHTML,
-                    timeStamp: Date.now()
+                    content: content,
+                    updateTimeStamp: time
                 });
+                that.updateTime(time);
             }, 300);
         }
         editNote.addEventListener('input', handleInput);
@@ -163,14 +173,14 @@ app.store = {
             var note = new Note(options);
             note.save();
             noteArr.push(note);
-            console.log(noteArr);
+            // console.log(noteArr);
         };
         var handleBtnRemove = function () {
-            console.log('handleBtnRemove');
-            console.log(noteArr);
+            // console.log('handleBtnRemove');
+            // console.log(noteArr);
             if (noteArr.length > 0) {
                 noteArr.forEach(function (element,index) {
-                    console.log(element);
+                    // console.log(element);
                     element.close();
                     // noteArr.splice(index,1);
                 }, this);
