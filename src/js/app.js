@@ -91,6 +91,20 @@ app.store = {
         this.updateTime(options.updateTimeStamp);
         this.addEvent();
     }
+    // 初始化便签
+    Note.prototype.init = function() {
+        var notes = store.getNotes();
+        Object.keys(notes).forEach(function(id){
+            var options = notes[id];
+            if (maxZIndex < options.zIndex) {
+                maxZIndex = options.zIndex;
+            }
+            new Note(Object.assign(options,{
+                id:id
+            }));
+        });
+        maxZIndex += 1;
+    }
     // 便签保存
     Note.prototype.save = function () {
         var that = this;
@@ -187,6 +201,11 @@ app.store = {
             }
             // 关闭后置空 noteArr
             noteArr = [];
+            // TODO 优化 清楚所有的便签
+            console.log('handleBtnRemove');
+            localStorage.clear();
+            init();
+            // store.remove(id);
         };
         var handleMousemove = function (ev) {
             if (!moveNote) {
@@ -208,18 +227,35 @@ app.store = {
         }
         $('#create').addEventListener('click', handleBtnCreate);
         $('#remove').addEventListener('click', handleBtnRemove);
-        // 初始化便签
-        var notes = store.getNotes();
-        Object.keys(notes).forEach(function(id){
-            var options = notes[id];
-            if (maxZIndex < options.zIndex) {
-                maxZIndex = options.zIndex;
-            }
-            new Note(Object.assign(options,{
-                id:id
-            }));
-        });
-        maxZIndex += 1;
+        // // 初始化便签
+        // new Note();
+        init();
+        function init() {
+            // debugger;
+            var notes = store.getNotes();
+            Object.keys(notes).forEach(function(id){
+                var options = notes[id];
+                console.log('init',options);
+                if (maxZIndex < options.zIndex) {
+                    maxZIndex = options.zIndex;
+                }
+                new Note(Object.assign(options,{
+                    id:id
+                }));
+            });
+            maxZIndex += 1;
+        }
+        // var notes = store.getNotes();
+        // Object.keys(notes).forEach(function(id){
+        //     var options = notes[id];
+        //     if (maxZIndex < options.zIndex) {
+        //         maxZIndex = options.zIndex;
+        //     }
+        //     new Note(Object.assign(options,{
+        //         id:id
+        //     }));
+        // });
+        // maxZIndex += 1;
         document.addEventListener('mousemove', handleMousemove);
         document.addEventListener('mouseup', handleMouseup);
         console.log($('.m-note .u-close'));
