@@ -1,3 +1,11 @@
+/**
+ * @desc 便签
+ * @version 0.1.0
+ * @author 轩辕Rowboat lxchuan12@163.com
+ * @date 2017-07-02
+ * @update 2017-11-25
+ * @copyright 2017
+ */
 // app
 var app = {
     utils: {},
@@ -5,9 +13,11 @@ var app = {
 };
 // 工具函数
 app.utils = {
+    // 获取单个元素
     $: function (selector, node) {
         return (node || document).querySelector(selector);
     },
+    // 格式化时间
     formatTime: function (timeStamp) {
         var time = new Date(timeStamp);
         var year = time.getFullYear();
@@ -91,6 +101,20 @@ app.store = {
         this.updateTime(options.updateTimeStamp);
         this.addEvent();
     }
+    // 初始化便签
+    Note.prototype.init = function() {
+        var notes = store.getNotes();
+        Object.keys(notes).forEach(function(id){
+            var options = notes[id];
+            if (maxZIndex < options.zIndex) {
+                maxZIndex = options.zIndex;
+            }
+            new Note(Object.assign(options,{
+                id:id
+            }));
+        });
+        maxZIndex += 1;
+    }
     // 便签保存
     Note.prototype.save = function () {
         var that = this;
@@ -116,12 +140,13 @@ app.store = {
         $('.m-time .u-timestamp', this.note).innerHTML = formatTimeStr;
         this.updateTimeInMS = nowTimeStamp;
     }
+    // 便签添加事件
     Note.prototype.addEvent = function () {
         let that = this;
         var btnClose = $('.u-close', this.note);
         // 便签的 mousedown 事件
         var handleMousedown = function (ev) {
-            console.log(ev);
+            // console.log(ev);
             moveNote = that.note;
             startX = ev.clientX - that.note.offsetLeft;
             startY = ev.clientY - that.note.offsetTop;
@@ -131,14 +156,14 @@ app.store = {
                     zIndex: maxZIndex - 1
                 });
             }
-            console.log('mousedown');
+            // console.log('mousedown');
         }
         that.note.addEventListener('mousedown', handleMousedown);
         var inputTimer;
         // 便签的 input 输入事件
         var editNote = $('.u-edit', that.note);
         var handleInput = function (ev) {
-            console.log('handleInput');
+            // console.log('handleInput');
             var content = editNote.innerHTML;
             clearTimeout(inputTimer);
             inputTimer = setTimeout(function () {
@@ -154,16 +179,44 @@ app.store = {
         // 便签的 关闭 事件
         var handleCloseClick = function (ev) {
             store.remove(that.note.id);
-            console.log('close click', that.note);
+            // console.log('close click', that.note);
             // 关闭的同时移除事件
             btnClose.removeEventListener('click', handleCloseClick);
             that.note.removeEventListener('mousedown', handleMousedown);
-            that.close(ev);
+            that.close();
         }
         btnClose.addEventListener('click', handleCloseClick);
     };
     document.addEventListener('DOMContentLoaded', function (e) {
-        var noteArr = [];
+        // 初始化保存在localstorage里的便签
+        function initLocal() {
+            // debugger;
+            var notes = store.getNotes();
+            // console.log('initLocal function notes', notes);
+            Object.keys(notes).forEach(function(id){
+                var options = notes[id];
+                // console.log('initLocal',options);
+                if (maxZIndex < options.zIndex) {
+                    maxZIndex = options.zIndex;
+                }
+                var note = new Note(Object.assign(options,{
+                    id:id
+                }));
+            });
+            maxZIndex += 1;
+        }
+        initLocal();
+        // var notes = store.getNotes();
+        // Object.keys(notes).forEach(function(id){
+        //     var options = notes[id];
+        //     if (maxZIndex < options.zIndex) {
+        //         maxZIndex = options.zIndex;
+        //     }
+        //     new Note(Object.assign(options,{
+        //         id:id
+        //     }));
+        // });
+        // maxZIndex += 1;
         var handleBtnCreate = function () {
             var options = {
                 left: Math.floor(Math.random() * (window.innerWidth - 200)),
@@ -172,21 +225,12 @@ app.store = {
             }
             var note = new Note(options);
             note.save();
-            noteArr.push(note);
-            // console.log(noteArr);
         };
         var handleBtnRemove = function () {
-            // console.log('handleBtnRemove');
-            // console.log(noteArr);
-            if (noteArr.length > 0) {
-                noteArr.forEach(function (element,index) {
-                    // console.log(element);
-                    element.close();
-                    // noteArr.splice(index,1);
-                }, this);
-            }
-            // 关闭后置空 noteArr
-            noteArr = [];
+            // 思路1：主动触发把所有的便签关闭事件
+            [...document.querySelectorAll('.u-close')].forEach((element) =>{
+                element.click();
+            });
         };
         var handleMousemove = function (ev) {
             if (!moveNote) {
@@ -206,22 +250,12 @@ app.store = {
             });
             moveNote = null;
         }
+        // 创建标签
         $('#create').addEventListener('click', handleBtnCreate);
+        // 清除所有的标签
         $('#remove').addEventListener('click', handleBtnRemove);
-        // 初始化便签
-        var notes = store.getNotes();
-        Object.keys(notes).forEach(function(id){
-            var options = notes[id];
-            if (maxZIndex < options.zIndex) {
-                maxZIndex = options.zIndex;
-            }
-            new Note(Object.assign(options,{
-                id:id
-            }));
-        });
-        maxZIndex += 1;
         document.addEventListener('mousemove', handleMousemove);
         document.addEventListener('mouseup', handleMouseup);
-        console.log($('.m-note .u-close'));
+        // console.log($('.m-note .u-close'));
     });
 }(app.utils, app.store));

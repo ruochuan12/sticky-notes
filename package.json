@@ -1,10 +1,12 @@
 {
   "name": "sticky-notes",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "sticky-notes",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp server",
+    "build": "gulp build"
   },
   "keywords": [
     "sticky-notes"
