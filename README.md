@@ -19,9 +19,11 @@ gulp插件可参考：[聂微东-gulp使用小结(一)](http://www.cnblogs.com/D
 
 `npm install http-server -g` 全局安装启动服务的工具
 [http-server npm包地址](https://www.npmjs.com/package/http-server)
-`http-server -p 8300` (可自定义) 启动服务
+`npm run server` 或者 `http-server -p 8300` (可自定义) 启动服务
 
+再新开另一个命令行窗口
 `npm run dev` 运行
+
 需要安装`chrome`插件 `LiveReload`配合使用，才能监听文件改动，实时渲染
 [插件地址：](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)
 为什么这么麻烦？具体可以查看这篇文章：[刷新拜拜～gulp-livereload--需要安装http-server](http://www.cnblogs.com/johnnydan/p/4667905.html)

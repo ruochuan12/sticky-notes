@@ -1,7 +1,8 @@
 /**
+ * @file app.js
  * @desc 便签
- * @version 0.1.0
- * @author 轩辕Rowboat lxchuan12@163.com
+ * @version 0.1.1
+ * @author 轩辕Rowboat <lxchuan12@163.com>
  * @date 2017-07-02
  * @update 2017-11-25
  * @copyright 2017

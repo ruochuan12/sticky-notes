@@ -1,3 +1,12 @@
+/**
+ * @file index.css
+ * @desc 便签样式
+ * @version 0.1.0
+ * @author 轩辕Rowboat <lxchuan12@163.com>
+ * @date 2017-07-02
+ * @update 2018-03-07
+ * @copyright 2017
+ */
 *{
     margin: 0;
     padding: 0;
@@ -34,7 +43,9 @@ body{
     width: 200px;
     height: 250px;
     padding: 10px;
+    padding-bottom: 20px;
     outline: none;
+    overflow: auto;
 }
 .m-note:hover .u-close{
     display: block;
@@ -54,4 +65,5 @@ body{
     left: 0;
     bottom: 0;
     padding:0 10px; 
+    background-color: rgb(255, 240, 70);
 }

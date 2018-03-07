@@ -1,7 +1,8 @@
 /**
- * @desc gulpfile.js gulp 配置文件
+ * @file gulpfile.js
+ * @desc gulp 配置文件
  * @version 0.1.0
- * @author 轩辕Rowboat lxchuan12@163.com
+ * @author 轩辕Rowboat <lxchuan12@163.com>
  * @date 2017-07-02
  * @update 2017-11-25
  * @copyright 2017
