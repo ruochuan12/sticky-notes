@@ -1,10 +1,10 @@
 /**
  * @file app.js
  * @desc 便签
- * @version 0.1.1
+ * @version 0.1.2
  * @author 轩辕Rowboat <lxchuan12@163.com>
  * @date 2017-07-02
- * @update 2017-11-25
+ * @update 2018-04-30
  * @copyright 2017
  */
 // app
@@ -37,17 +37,6 @@ app.utils = {
         }
         return year + '-' + to2bit(month) + '-' + to2bit(date) + ' ' + to2bit(hour) + ':' + to2bit(minute) + ':' + to2bit(second);
     },
-    // TO DO 限制拖动范围
-    limitRange: function (note) {
-        var style = null;
-        if (window.getComputedStyle) {
-            style = window.getComputedStyle(node, null);
-        } else {
-            style = node.currentStyle;
-        }
-        return style;
-    },
-    // 获取计算后的样式
 }
 // 数据存储到本地
 app.store = {
@@ -72,7 +61,6 @@ app.store = {
         localStorage[this.__store_key] = JSON.stringify(notes);
     },
     getNotes: function(){
-        // debugger;
         return JSON.parse(localStorage[this.__store_key] || '{}');
     }
 };
@@ -80,6 +68,8 @@ app.store = {
 (function (utils, store) {
     var $ = utils.$;
     var moveNote = null;
+    // 是否限制拖拽范围在可视区 上边缘和左边缘磁性吸附
+    var isLimitRange = true;
     var startX;
     var startY;
     var maxZIndex = 0;
@@ -87,7 +77,12 @@ app.store = {
         <i class="u-close"></i>
         <div class="u-edit"  contenteditable="true"></div>
         <div class="m-time"><span>更新：</span><span class="u-timestamp">2017-07-02 15:09:02<span></div>`;
-    // 创建便签
+    /**
+     * 创建便签
+     * @author luoxiaochuan <lxchuan12@163.com>
+     * @date 2018-04-30
+     * @param {Object} options 
+     */
     function Note(options) {
         var note = document.createElement('div');
         note.className = 'm-note';
@@ -102,7 +97,11 @@ app.store = {
         this.updateTime(options.updateTimeStamp);
         this.addEvent();
     }
-    // 初始化便签
+    /**
+     * 初始化便签
+     * @author luoxiaochuan <lxchuan12@163.com>
+     * @date 2018-04-30
+     */
     Note.prototype.init = function() {
         var notes = store.getNotes();
         Object.keys(notes).forEach(function(id){
@@ -116,7 +115,11 @@ app.store = {
         });
         maxZIndex += 1;
     }
-    // 便签保存
+    /**
+     * 便签保存
+     * @author luoxiaochuan <lxchuan12@163.com>
+     * @date 2018-04-30
+     */
     Note.prototype.save = function () {
         var that = this;
         var dataStore = {
@@ -130,18 +133,30 @@ app.store = {
         }
         store.set(this.note.id, dataStore);
     }
-    // 便签关闭
+    /**
+     * 便签关闭
+     * @author luoxiaochuan <lxchuan12@163.com>
+     * @date 2018-04-30
+     */
     Note.prototype.close = function () {
         document.body.removeChild(this.note);
     }
-    /// 便签更新时间
+    /**
+     * 便签更新时间
+     * @author luoxiaochuan <lxchuan12@163.com>
+     * @date 2018-04-30
+     */
     Note.prototype.updateTime = function (ms) {
         var nowTimeStamp = ms || Date.now();
         var formatTimeStr = utils.formatTime(nowTimeStamp);
         $('.m-time .u-timestamp', this.note).innerHTML = formatTimeStr;
         this.updateTimeInMS = nowTimeStamp;
     }
-    // 便签添加事件
+    /**
+     * 便签添加事件
+     * @author luoxiaochuan <lxchuan12@163.com>
+     * @date 2018-04-30
+     */
     Note.prototype.addEvent = function () {
         let that = this;
         var btnClose = $('.u-close', this.note);
@@ -237,8 +252,29 @@ app.store = {
             if (!moveNote) {
                 return;
             }
-            moveNote.style.left = ev.clientX - startX + 'px';
-            moveNote.style.top = ev.clientY - startY + 'px';
+            var ev = ev || event;
+            
+            var L = ev.clientX - startX;
+            var T = ev.clientY - startY;
+
+            if(isLimitRange){
+                var width = document.documentElement.clientWidth - moveNote.offsetWidth;
+                var height = document.documentElement.clientHeight - moveNote.offsetHeight;
+                if(L < 100){
+                    L = 0;
+                }else if(L > width){
+                    L = width;
+                }
+                
+                if(T < 100){
+                    T = 0;
+                }else if(T > height){
+                    T = height;
+                }
+            }
+            
+            moveNote.style.left = L + 'px';
+            moveNote.style.top = T + 'px';
             // console.log('move', ev);
         };
         var handleMouseup = function () {

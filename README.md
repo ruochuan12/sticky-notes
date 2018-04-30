@@ -6,13 +6,15 @@ gulp插件可参考：[聂微东-gulp使用小结(一)](http://www.cnblogs.com/D
 已经把文件提交到`git`，如何再添加到`.gitignore`，一定要删除？(遗留其他问题)
 `chrome`浏览器有时缓存严重，清空缓存并硬性重新加载。
 
-// TODO
+// TODO 功能点
 
 - [x] 1、创建、删除、移动、删除所有便签
 
 - [x] 2、保存到`localstorage`
 
-- [x] 3、`z-index`、时间存储还有点问题
+- [x] 3、清除所有便签
+
+- [x] 4、拖拽范围限制在可视区，并实现上方和左方磁性吸附
 
 #### How to use
 `npm install` 安装依赖
