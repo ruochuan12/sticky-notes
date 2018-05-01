@@ -1,13 +1,14 @@
 ### sticky-notes 便签
 
-[本项目预览地址](https://lxchuan12.github.io/sticky-notes/dist/)
+[点击预览本项目](https://lxchuan12.github.io/sticky-notes/dist/)
 
-其中`webpack`,`master`分支是使用`webpack4`构建。[webpack分支链接：](https://github.com/lxchuan12/sticky-notes/tree/webpack)
-`gh-pages`分支是使用`gulp`构建。[gh-pages分支链接：](https://github.com/lxchuan12/sticky-notes/tree/gh-pages)
+其中`master`，`webpack`分支是使用`webpack4`构建。[点击查看`webpack`分支](https://github.com/lxchuan12/sticky-notes/tree/webpack)
+
+`gh-pages`分支是使用`gulp`构建。[点击查看`gh-pages`分支](https://github.com/lxchuan12/sticky-notes/tree/gh-pages)
 
 
-[参考效果链接地址](https://webkit.org/demos/sticky-notes/)
-### TODO 功能点
+[点击查看参考的项目效果](https://webkit.org/demos/sticky-notes/)
+#### TODO 功能点
 
 - [x] 1、创建、删除、移动、删除所有便签
 
@@ -36,7 +37,7 @@
 打包发布：`npm run build`
 
 
-### 克隆下来，开发过程中可能遇到的问题：
-gulp插件可参考：[聂微东-gulp使用小结(一)](http://www.cnblogs.com/Darren_code/p/gulp.html)
+#### 克隆下来，开发过程中可能遇到的问题：
+1、`chrome`浏览器有时缓存严重，清空缓存并硬性重新加载。
 
-`chrome`浏览器有时缓存严重，清空缓存并硬性重新加载。
+2、gulp插件可参考：[聂微东-gulp使用小结(一)](http://www.cnblogs.com/Darren_code/p/gulp.html)
