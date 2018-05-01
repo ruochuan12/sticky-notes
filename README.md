@@ -1,18 +1,19 @@
 ### sticky-notes 便签
 
-[本项目预览地址](https://lxchuan12.github.io/sticky-notes/dist/)
+[点击预览本项目](https://lxchuan12.github.io/sticky-notes/dist/)
 
-其中`webpack`,`master`分支是使用`webpack4`构建。[webpack分支链接：](https://github.com/lxchuan12/sticky-notes/tree/webpack)
-`gh-pages`分支是使用`gulp`构建。[gh-pages分支链接：](https://github.com/lxchuan12/sticky-notes/tree/gh-pages)
+其中`master`，`webpack`分支是使用`webpack4`构建。[点击查看`webpack`分支](https://github.com/lxchuan12/sticky-notes/tree/webpack)
+
+`gh-pages`分支是使用`gulp`构建。[点击查看`gh-pages`分支](https://github.com/lxchuan12/sticky-notes/tree/gh-pages)
 
 
-[效果参考的项目链接](https://webkit.org/demos/sticky-notes/)
+[点击查看参考的项目效果](https://webkit.org/demos/sticky-notes/)
 
-### TODO 功能点
+#### TODO 功能点
 
-- [x] 1、创建、删除、移动、删除所有便签
+- [x] 1、创建、删除、移动、删除便签
 
-- [x] 2、保存到`localstorage`
+- [x] 2、把便签内容保存到`localstorage`
 
 - [x] 3、清除所有便签
 
