@@ -1,9 +1,14 @@
 ### sticky-notes 便签
+
+[本项目预览地址](https://lxchuan12.github.io/sticky-notes/dist/)
+
+其中`webpack`,`master`分支是使用`webpack4`构建。[webpack分支链接：](https://github.com/lxchuan12/sticky-notes/tree/webpack)
+`gh-pages`分支是使用`gulp`构建。[gh-pages分支链接：](https://github.com/lxchuan12/sticky-notes/tree/gh-pages)
+
+
 [效果参考的项目链接](https://webkit.org/demos/sticky-notes/)
 
-[本项目链接](https://lxchuan12.github.io/sticky-notes/dist)
-
-// TODO 功能点
+### TODO 功能点
 
 - [x] 1、创建、删除、移动、删除所有便签
 
@@ -20,6 +25,6 @@
 
 `npm run dev` 启动编写代码
 
-访问：`http://localhost:1200`
+本地开发访问：`http://localhost:1200`
 
 打包发布：`npm run build`
