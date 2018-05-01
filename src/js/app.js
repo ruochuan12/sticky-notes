@@ -7,6 +7,9 @@
  * @update 2018-04-30
  * @copyright 2017
  */
+import '../css/index';
+import '../img/btn-close.png';
+import '../favicon.ico';
 // app
 var app = {
     utils: {},
@@ -260,13 +263,13 @@ app.store = {
             if(isLimitRange){
                 var width = document.documentElement.clientWidth - moveNote.offsetWidth;
                 var height = document.documentElement.clientHeight - moveNote.offsetHeight;
-                if(L < 100){
+                if(L < 0){
                     L = 0;
                 }else if(L > width){
                     L = width;
                 }
                 
-                if(T < 100){
+                if(T < 0){
                     T = 0;
                 }else if(T > height){
                     T = height;
