@@ -1,0 +1,51 @@
+#!/bin/bash
+#
+# version 0.1.0
+# author  luoxiaochuan <lxchuan12@163.com>
+# date    2018-05-02
+
+DIR=$(pwd)
+GROOT=$(git rev-parse --show-toplevel)
+
+cd $GROOT
+
+STATUS=$(git status --porcelain -- src/js src/less srcv2/source wechatvip/source help/src 2> /dev/null | tail -n1)
+
+if [[ ! -n $STATUS ]]; then
+	exit 0
+fi
+
+hasEslint=$(which eslint 2>/dev/null | wc -c)
+if [[ $hasEslint == 0 ]]; then
+	echo "\033[31mESLint\033[0m is not in your system."
+	echo
+	echo "How to install it?"
+	echo
+	echo "Use npm"
+	echo "$ \033[37mnpm install -g eslint\033[0m"
+	echo
+	echo "Use yarn"
+	echo "$ \033[37myarn global add eslint\033[0m"
+	exit 1
+fi
+
+
+# check src
+STATUS=$(git status --porcelain -- src 2> /dev/null | tail -n1)
+
+if [[ -n $STATUS ]]; then
+	cd src
+	echo "Now, let's check your code in src ..."
+	eslint --ext .js --format 'node_modules/eslint-friendly-formatter' src -c .eslintrc.js
+	if [[ $? -ne 0 ]]; then
+		echo "\033[31m✘\033[0m  It seems that you should correct your code first."
+		exit 1
+	fi
+	echo "\033[32m✔\033[0m  Well done."
+
+	cd $GROOT
+	echo
+fi
+
+
+cd $DIR

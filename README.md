@@ -21,11 +21,21 @@
 
 - [x] 5、改用webpack4 构建
 
+- [x] 6、加入less、eslint、babel等
+
 #### How to use
-`npm install` 安装依赖
+```
+// 安装依赖
+npm install
 
-`npm run dev` 启动编写代码
+// 启动编写代码
+npm run dev
 
-本地开发访问：`http://localhost:1200`
+// 本地开发访问：`http://localhost:1200`
 
-打包发布：`npm run build`
+// `eslint` 格式化文件
+npm run lint:fix
+
+// 打包发布
+npm run build
+```

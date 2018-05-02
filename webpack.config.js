@@ -27,7 +27,7 @@ const config = {
     module: {
         rules: [
             {
-                test: /\.css$/,
+                test: /\.less$/,
                 use: ExtractTextWebpackPlugin.extract({
                     // 将css用link的方式引入就不再需要style-loader了
                     use: [
@@ -39,6 +39,9 @@ const config = {
                             options:{
                                 minimize: true //css压缩
                             }
+                        },
+                        {
+                            loader: 'less-loader'
                         },
                         {
                             loader: 'postcss-loader',
@@ -60,6 +63,21 @@ const config = {
                     }
                 ]
             },
+            {
+				test: /\.js$/,
+				loader: 'eslint-loader',
+				enforce: 'pre',
+				include: /src/,
+				options: {
+					formatter: require('eslint-friendly-formatter'),
+				},
+            },
+            {
+                test:/\.js$/,
+                use: 'babel-loader',
+                include: /src/,          // 只转化src目录下的js
+                exclude: /node_modules/  // 排除掉node_modules，优化打包速度
+            },
         ]
     },
     resolve: {
@@ -68,7 +86,7 @@ const config = {
         //     $: './src/jquery.js'
         // },
          // 省略后缀
-         extensions: ['.js', '.json', '.css']
+         extensions: ['.js', '.json', '.css', 'less']
     },
     plugins: [
         new webpack.DefinePlugin({
