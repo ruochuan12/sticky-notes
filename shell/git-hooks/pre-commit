@@ -9,7 +9,7 @@ GROOT=$(git rev-parse --show-toplevel)
 
 cd $GROOT
 
-STATUS=$(git status --porcelain -- src/js src/less srcv2/source wechatvip/source help/src 2> /dev/null | tail -n1)
+STATUS=$(git status --porcelain -- src 2> /dev/null | tail -n1)
 
 if [[ ! -n $STATUS ]]; then
 	exit 0
