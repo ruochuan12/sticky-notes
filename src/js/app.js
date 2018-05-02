@@ -290,6 +290,7 @@ app.store = {
 		$('#remove').addEventListener('click', handleBtnRemove);
 		document.addEventListener('mousemove', handleMousemove);
 		document.addEventListener('mouseup', handleMouseup);
+		sss
 		// console.log($('.m-note .u-close'));
 	});
 }(app.utils, app.store));
