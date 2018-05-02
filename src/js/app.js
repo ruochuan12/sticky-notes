@@ -293,3 +293,10 @@ app.store = {
 		// console.log($('.m-note .u-close'));
 	});
 }(app.utils, app.store));
+// console.log(1);
+if(module.hot){
+	// 实现热更新
+	module.hot.accept('../styles/index.less', function(){
+		console.log('hot-accept-style-less-2');
+	});
+}

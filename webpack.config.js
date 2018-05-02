@@ -1,7 +1,7 @@
 /**
  * @file webpack.config.js
  * @desc webpack 配置文件
- * @version 0.1.0
+ * @version 0.1.2
  * @author luoxiaochuan <lxchuan12@163.com>
  * @date 2018-05-01
  * @copyright 2018
@@ -26,30 +26,6 @@ const config = {
     },
     module: {
         rules: [
-            {
-                test: /\.less$/,
-                use: ExtractTextWebpackPlugin.extract({
-                    // 将css用link的方式引入就不再需要style-loader了
-                    use: [
-                        // {
-                        //     loader: 'style-loader',
-                        // },
-                        {
-                            loader: 'css-loader',
-                            options:{
-                                minimize: true //css压缩
-                            }
-                        },
-                        {
-                            loader: 'less-loader'
-                        },
-                        {
-                            loader: 'postcss-loader',
-                        }
-                    ]
-                })
-                
-            },
             {
                 test: /\.(jpe?g|png|gif|ico)$/,
                 use: [
@@ -100,6 +76,9 @@ const config = {
             // 配置文件模板
             template: './src/index.html',
             hash: true, // 会在打包好的bundle.js后面加上hash串
+            favicon: './src/favicon.ico',
+            // HTML 压缩
+            minify: true
         }),
         // 拆分后会把css文件放到dist目录下的css/style.css
         new ExtractTextWebpackPlugin('css/style.css'),
@@ -130,12 +109,60 @@ if(isDev){
             warning: true,
         }
     };
+    // css文件的热更新
+    // 开发环境不要用extract-text-webpack-plugin插件，而是用style-loader代替。
+    // [搭建带热更新功能的本地开发node server](http://www.cnblogs.com/wonyun/p/7077296.html)
+    config.module.rules.unshift({
+        test: /\.less$/,
+        use: [
+            {
+                loader: 'style-loader',
+            },
+            {
+                loader: 'css-loader',
+                options:{
+                    minimize: true //css压缩
+                }
+            },
+            {
+                loader: 'less-loader'
+            },
+            {
+                loader: 'postcss-loader',
+            }
+        ]
+    });
     config.plugins.push(
+        new webpack.NamedModulesPlugin(), // 用于启动 HMR 时可以显示模块的相对路径
         // 热替换，热替换不是刷新
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin()
     );
 }else{
+    config.module.rules.unshift({
+        test: /\.less$/,
+        use: ExtractTextWebpackPlugin.extract({
+            fallback: 'style-loader',
+            // 将css用link的方式引入就不再需要style-loader了
+            use: [
+                // {
+                //     loader: 'style-loader',
+                // },
+                {
+                    loader: 'css-loader',
+                    options:{
+                        minimize: true //css压缩
+                    }
+                },
+                {
+                    loader: 'less-loader'
+                },
+                {
+                    loader: 'postcss-loader',
+                }
+            ]
+        })
+    });
     config.output.filename = 'bundle.[chunkHash:6].js';
     // 每次构建前先清除dist目录原有文件
     config.plugins.unshift(
