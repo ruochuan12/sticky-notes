@@ -12,6 +12,9 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // 拆分css webpack 4 安装 cnpm i extract-text-webpack-plugin@next -D
 const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
+// https://www.npmjs.com/package/webpack-bundle-analyzer
+// webpack打包体积优化，详细分布查看插件 webpack-bundle-analyzer
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 // JS压缩插件
 const UglifyjsWebpackPlugin = require('uglifyjs-webpack-plugin');
 
@@ -167,6 +170,10 @@ if(isDev){
     // 每次构建前先清除dist目录原有文件
     config.plugins.unshift(
         new CleanWebpackPlugin('dist'),
+    );
+    // 打包分析
+    config.plugins.push(
+        new BundleAnalyzerPlugin()
     );
 }
 
