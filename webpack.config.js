@@ -15,10 +15,16 @@ const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 // https://www.npmjs.com/package/webpack-bundle-analyzer
 // webpack打包体积优化，详细分布查看插件 webpack-bundle-analyzer
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+// https://github.com/clessg/progress-bar-webpack-plugin
+const progressBarWebpackPlugin = require('progress-bar-webpack-plugin');
+const chalk	= require('chalk');
 // JS压缩插件
 const UglifyjsWebpackPlugin = require('uglifyjs-webpack-plugin');
 
 const isDev = process.env.NODE_ENV === 'development';
+
+// 是否打包分析
+const bundleAnalyzerReport = process.env.npm_config_report;
 
 const config = {
     target: 'web',
@@ -171,10 +177,19 @@ if(isDev){
     config.plugins.unshift(
         new CleanWebpackPlugin('dist'),
     );
-    // 打包分析
+    // 进度条
     config.plugins.push(
-        new BundleAnalyzerPlugin()
+        new progressBarWebpackPlugin({
+            format: '  build [:bar] ' + chalk.green.bold(':percent') + ' (:elapsed seconds)',
+            clear: false
+        })
     );
+    // 打包分析
+    if(bundleAnalyzerReport){
+        config.plugins.push(
+            new BundleAnalyzerPlugin()
+        );
+    }
 }
 
 console.log('是否是开发环境', isDev);
