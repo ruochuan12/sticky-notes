@@ -1,13 +1,14 @@
 ### sticky-notes 便签
 
-[点击预览本项目](https://lxchuan12.github.io/sticky-notes/dist/)
+<a href="https://lxchuan12.github.io/sticky-notes/dist/" target="_blank">点击预览本项目</a>
 
-其中`master`，`webpack`分支是使用`webpack4`构建。[点击查看`webpack`分支](https://github.com/lxchuan12/sticky-notes/tree/webpack)
+其中`master`，`dev`分支是使用`webpack4`构建。[点击查看`dev`分支](https://github.com/lxchuan12/sticky-notes/tree/dev)
 
 `gh-pages`分支是使用`gulp`构建。[点击查看`gh-pages`分支](https://github.com/lxchuan12/sticky-notes/tree/gh-pages)
 
 
-[点击查看参考的项目效果](https://webkit.org/demos/sticky-notes/)
+<a href="https://webkit.org/demos/sticky-notes/" target="_blank">点击查看参考的项目效果</a>
+
 
 #### TODO 功能点
 

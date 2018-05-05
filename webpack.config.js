@@ -112,10 +112,10 @@ const config = {
                     drop_debugger: true,
                     drop_console: true,
                 }
-              },
-              sourceMap: false,
-              cache: true,
-              parallel: os.cpus().length * 2
+            },
+            sourceMap: false,
+            cache: true,
+            parallel: os.cpus().length * 2
         })
     ],
     mode: 'none'
