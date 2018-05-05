@@ -18,6 +18,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 // https://github.com/clessg/progress-bar-webpack-plugin
 const progressBarWebpackPlugin = require('progress-bar-webpack-plugin');
 const chalk	= require('chalk');
+const os = require('os');
 // JS压缩插件
 const UglifyjsWebpackPlugin = require('uglifyjs-webpack-plugin');
 
@@ -100,7 +101,22 @@ const config = {
         //     }
         // }),
         // JS压缩
-        new UglifyjsWebpackPlugin()
+        new UglifyjsWebpackPlugin({
+            uglifyOptions: {
+                ie8: true,
+                ecma: 8,
+                mangle: true,
+                output: { comments: false },
+                compress: {
+                    warnings: false,
+                    drop_debugger: true,
+                    drop_console: true,
+                }
+              },
+              sourceMap: false,
+              cache: true,
+              parallel: os.cpus().length * 2
+        })
     ],
     mode: 'none'
 };
@@ -192,7 +208,7 @@ if(isDev){
     }
 }
 
-console.log('是否是开发环境', isDev);
+console.log('当前运行环境', process.env.NODE_ENV);
 
 
 module.exports = config;
