@@ -80,6 +80,7 @@ app.store = {
 	var maxZIndex = 0;
 	var noteTpl = `
 		<i class="u-close"></i>
+		<div class="u-bar"></div>
 		<div class="u-edit"  contenteditable="true"></div>
 		<div class="m-time"><span>更新：</span><span class="u-timestamp">2017-07-02 15:09:02<span></div>`;
 	/**
@@ -180,7 +181,7 @@ app.store = {
 			}
 			// console.log('mousedown');
 		};
-		that.note.addEventListener('mousedown', handleMousedown);
+		$('.u-bar', that.note).addEventListener('mousedown', handleMousedown);
 		var inputTimer;
 		// 便签的 input 输入事件
 		var editNote = $('.u-edit', that.note);
@@ -200,6 +201,14 @@ app.store = {
 		editNote.addEventListener('input', handleInput);
 		// 便签的 关闭 事件
 		var handleCloseClick = function (ev){
+			// 不为空时提示是否删除。
+			var content = editNote.innerHTML;
+			if(content !== ''){
+				var result = window.confirm('是否要删除此笔记？');
+				if(!result){
+					return;
+				}
+			}
 			store.remove(that.note.id);
 			// console.log('close click', that.note);
 			// 关闭的同时移除事件

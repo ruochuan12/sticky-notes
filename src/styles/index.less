@@ -1,10 +1,10 @@
 /**
  * @file index.css
  * @desc 便签样式
- * @version 0.1.1
+ * @version 0.1.2
  * @author 轩辕Rowboat <lxchuan12@163.com>
  * @date 2017-07-02
- * @update 2018-05-02
+ * @update 2018-05-06
  * @copyright 2017
  */
 *{
@@ -35,21 +35,34 @@ body{
     left: 20px;
     top: 70px;
     width: 200px;
-    height: 250px;
-    background-color: rgb(255, 240, 70);
+    @bar-height: 26px;
+    @minHeight: 250px;
+    @maxHeight: 400px;
+    min-height: @minHeight + @bar-height;
+    max-height: @maxHeight + @bar-height * 2;
+    // background-color: rgb(255, 240, 70);
+    @bgc: #C4E5FF;
+    background-color: @bgc;
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     .u-edit{
         box-sizing: border-box;
         width: 200px;
-        height: 250px;
+        min-height: @minHeight;
+        max-height: @maxHeight;
         padding: 10px;
-        padding-bottom: 20px;
+        // padding-bottom: 20px;
         outline: none;
-        overflow: auto;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
     &:hover .u-close{
         display: block;
+    }
+    .u-bar{
+        height: @bar-height;
+        background: #0179D7;
+        cursor: move;
     }
     .u-close{
         width: 30px;
@@ -62,10 +75,12 @@ body{
         cursor: pointer;
     }
     .m-time{
-        position: absolute;
-        left: 0;
-        bottom: 0;
+        // position: absolute;
+        // left: 0;
+        // bottom: 0;
+        line-height: @bar-height;
+        height: @bar-height;
         padding:0 10px; 
-        background-color: rgb(255, 240, 70);
+        background-color: @bgc;
     }
 }
