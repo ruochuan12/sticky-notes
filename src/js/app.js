@@ -18,11 +18,11 @@ var app = {
 // 工具函数
 app.utils = {
 	// 获取单个元素
-	$: function (selector, node){
+	$: function(selector, node){
 		return (node || document).querySelector(selector);
 	},
 	// 格式化时间
-	formatTime: function (timeStamp){
+	formatTime: function(timeStamp){
 		var time = new Date(timeStamp);
 		var year = time.getFullYear();
 		var month = time.getMonth() + 1;
@@ -41,6 +41,48 @@ app.utils = {
 		}
 		return year + '-' + to2bit(month) + '-' + to2bit(date) + ' ' + to2bit(hour) + ':' + to2bit(minute) + ':' + to2bit(second);
 	},
+	/**
+	 * 绑定事件
+	 * @author luoxiaochuan <lxchuan12@163.com>
+	 * @date 2018-05-10
+	 */
+	on: (function(){
+		if(document.addEventListener){
+			return function(element, event, handler){
+				if(element && event && handler){
+					element.addEventListener(event, handler, false);
+				}
+			};
+		}
+		else{
+			return function(element, event, handler){
+				if(element && event && handler){
+					element.attachEvent('on' + event, handler);
+				}
+			};
+		}
+	})(),
+	/**
+	 * 取消事件
+	 * @author luoxiaochuan <lxchuan12@163.com>
+	 * @date 2018-05-10
+	 */
+	off: (function(){
+		if(document.removeEventListener){
+			return function(element, event, handler){
+				if(element && event && handler){
+					element.removeEventListener(event, handler, false);
+				}
+			};
+		}
+		else{
+			return function(element, event, handler){
+				if(element && event && handler){
+					element.detachEvent('on' + event, handler);
+				}
+			};
+		}
+	})(),
 };
 // 数据存储到本地
 app.store = {
@@ -72,6 +114,9 @@ app.store = {
 // 立即执行函数
 (function (utils, store){
 	var $ = utils.$;
+	var formatTime = utils.formatTime;
+	var on = utils.on;
+	var off = utils.off;
 	var moveNote = null;
 	// 是否限制拖拽范围在可视区 上边缘和左边缘磁性吸附
 	var isLimitRange = true;
@@ -155,7 +200,7 @@ app.store = {
 	 */
 	Note.prototype.updateTime = function (ms){
 		var nowTimeStamp = ms || Date.now();
-		var formatTimeStr = utils.formatTime(nowTimeStamp);
+		var formatTimeStr = formatTime(nowTimeStamp);
 		$('.m-time .u-timestamp', this.note).innerHTML = formatTimeStr;
 		this.updateTimeInMS = nowTimeStamp;
 	};
@@ -171,6 +216,9 @@ app.store = {
 		var handleMousedown = function (ev){
 			// console.log(ev);
 			moveNote = that.note;
+			if(moveNote.setCapture){
+				moveNote.setCapture();
+			}
 			startX = ev.clientX - that.note.offsetLeft;
 			startY = ev.clientY - that.note.offsetTop;
 			if(moveNote.style.zIndex !== maxZIndex - 1){
@@ -181,7 +229,7 @@ app.store = {
 			}
 			// console.log('mousedown');
 		};
-		$('.u-bar', that.note).addEventListener('mousedown', handleMousedown);
+		on($('.u-bar', that.note), 'mousedown', handleMousedown);
 		var inputTimer;
 		// 便签的 input 输入事件
 		var editNote = $('.u-edit', that.note);
@@ -198,7 +246,7 @@ app.store = {
 				that.updateTime(time);
 			}, 300);
 		};
-		editNote.addEventListener('input', handleInput);
+		on(editNote, 'input', handleInput);
 		// 便签的 关闭 事件
 		var handleCloseClick = function (ev){
 			// 不为空时提示是否删除。
@@ -212,13 +260,13 @@ app.store = {
 			store.remove(that.note.id);
 			// console.log('close click', that.note);
 			// 关闭的同时移除事件
-			btnClose.removeEventListener('click', handleCloseClick);
-			that.note.removeEventListener('mousedown', handleMousedown);
+			off(btnClose, 'click', handleCloseClick);
+			off(that.note, 'mousedown', handleMousedown);
 			that.close();
 		};
-		btnClose.addEventListener('click', handleCloseClick);
+		on(btnClose, 'click', handleCloseClick);
 	};
-	document.addEventListener('DOMContentLoaded', function (e){
+	on(document, 'DOMContentLoaded', function (e){
 		// 初始化保存在localstorage里的便签
 		function initLocal(){
 			// debugger;
@@ -246,20 +294,6 @@ app.store = {
 			};
 			var note = new Note(options);
 			note.save();
-		};
-		var handleBtnRemoveAllNotes = function (){
-			// 有便签就提示是否删除所有便签
-			var hasNote = [...document.querySelectorAll('.m-note')].length > 0;
-			if(hasNote){
-				var result = window.confirm('是否要清除所有便签？');
-				if(!result){
-					return;
-				}
-			}
-			// 思路1：主动触发把所有的便签关闭事件
-			[...document.querySelectorAll('.u-close')].forEach((element) => {
-				element.click();
-			});
 		};
 		var handleMousemove = function (ev){
 			if(!moveNote){
@@ -299,14 +333,34 @@ app.store = {
 				left: moveNote.offsetLeft,
 				top: moveNote.offsetTop
 			});
+			if(moveNote.releaseCapture){
+				moveNote.releaseCapture();
+			}
 			moveNote = null;
+			// 把事件解除
+			// off(document, 'mousemove', handleMousemove);
+		};
+		// 清除所有的便签
+		var handleBtnRemoveAllNotes = function (){
+			// 有便签就提示是否删除所有便签
+			var hasNote = [...document.querySelectorAll('.m-note')].length > 0;
+			if(hasNote){
+				var result = window.confirm('是否要清除所有便签？');
+				if(!result){
+					return;
+				}
+			}
+			// 思路1：主动触发把所有的便签关闭事件
+			[...document.querySelectorAll('.u-close')].forEach((element) => {
+				element.click();
+			});
 		};
 		// 创建便签
-		$('#create').addEventListener('click', handleBtnCreate);
+		on($('#create'), 'click', handleBtnCreate);
+		on(document, 'mousemove', handleMousemove);
+		on(document, 'mouseup', handleMouseup);
 		// 清除所有的便签
-		$('#remove').addEventListener('click', handleBtnRemoveAllNotes);
-		document.addEventListener('mousemove', handleMousemove);
-		document.addEventListener('mouseup', handleMouseup);
+		on($('#remove'), 'click', handleBtnRemoveAllNotes);
 		// console.log($('.m-note .u-close'));
 	});
 }(app.utils, app.store));
