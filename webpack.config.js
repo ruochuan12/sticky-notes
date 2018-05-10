@@ -1,7 +1,7 @@
 /**
  * @file webpack.config.js
  * @desc webpack 配置文件
- * @version 0.1.2
+ * @version 0.1.3
  * @author luoxiaochuan <lxchuan12@163.com>
  * @date 2018-05-01
  * @copyright 2018
@@ -72,7 +72,7 @@ const config = {
         //     $: './src/jquery.js'
         // },
          // 省略后缀
-         extensions: ['.js', '.json', '.css', 'less']
+         extensions: ['.js', '.json', '.css', '.less']
     },
     plugins: [
         new webpack.DefinePlugin({

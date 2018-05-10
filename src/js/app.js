@@ -7,7 +7,7 @@
  * @update 2018-04-30
  * @copyright 2017
  */
-import '../styles/index.less';
+import '../styles/index';
 import '../img/btn-close.png';
 import '../favicon.ico';
 // app
@@ -204,7 +204,7 @@ app.store = {
 			// 不为空时提示是否删除。
 			var content = editNote.innerHTML;
 			if(content !== ''){
-				var result = window.confirm('是否要删除此笔记？');
+				var result = window.confirm('是否要删除此便签？');
 				if(!result){
 					return;
 				}
@@ -247,7 +247,15 @@ app.store = {
 			var note = new Note(options);
 			note.save();
 		};
-		var handleBtnRemove = function (){
+		var handleBtnRemoveAllNotes = function (){
+			// 有便签就提示是否删除所有便签
+			var hasNote = [...document.querySelectorAll('.m-note')].length > 0;
+			if(hasNote){
+				var result = window.confirm('是否要清除所有便签？');
+				if(!result){
+					return;
+				}
+			}
 			// 思路1：主动触发把所有的便签关闭事件
 			[...document.querySelectorAll('.u-close')].forEach((element) => {
 				element.click();
@@ -293,10 +301,10 @@ app.store = {
 			});
 			moveNote = null;
 		};
-		// 创建标签
+		// 创建便签
 		$('#create').addEventListener('click', handleBtnCreate);
-		// 清除所有的标签
-		$('#remove').addEventListener('click', handleBtnRemove);
+		// 清除所有的便签
+		$('#remove').addEventListener('click', handleBtnRemoveAllNotes);
 		document.addEventListener('mousemove', handleMousemove);
 		document.addEventListener('mouseup', handleMouseup);
 		// console.log($('.m-note .u-close'));
