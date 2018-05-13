@@ -109,7 +109,7 @@ const config = {
 		// JS压缩
 		new UglifyjsWebpackPlugin({
 			uglifyOptions: {
-				ie8: true,
+				ie8: false,
 				ecma: 8,
 				mangle: true,
 				output: { comments: false },
