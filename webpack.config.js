@@ -72,7 +72,7 @@ const config = {
 		//     $: './src/jquery.js'
 		// },
 		 // 省略后缀
-		 extensions: ['.js', '.json', '.css', '.less']
+		 extensions: ['.js', '.css', '.less', '.json']
 	},
 	plugins: [
 		new webpack.DefinePlugin({
@@ -126,6 +126,9 @@ const config = {
 	],
 	mode: 'none'
 };
+
+// console.log('当前运行环境', process.env.NODE_ENV);
+// chalk.blue.bold(`building for + ${process.env.NODE_ENV}`);
 
 if(isDev){
 	config.devtool = '#cheap-module-eval-source-map';
@@ -213,8 +216,6 @@ if(isDev){
 		);
 	}
 }
-
-console.log('当前运行环境', process.env.NODE_ENV);
 
 
 module.exports = config;
