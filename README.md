@@ -23,6 +23,8 @@
 
 - [x] 6、加入less、eslint、babel等
 
+- [x] 7、加入husky依赖，precommit 钩子校验
+
 #### How to use
 ```
 // 安装依赖
