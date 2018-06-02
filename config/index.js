@@ -28,6 +28,7 @@ module.exports = {
 		assetsSubDirectory: 'static',
 		assetsPublicPath: './',
 		productionSourceMap: true,
+		productionCache: true,
 		devtool: '#source-map',
 		bundleAnalyzerReport: process.env.npm_config_report,
 	},

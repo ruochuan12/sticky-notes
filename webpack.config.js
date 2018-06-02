@@ -29,7 +29,9 @@ const bundleAnalyzerReport = process.env.npm_config_report;
 
 const config = {
 	target: 'web',
-	entry: path.resolve(__dirname, './src/js/app.js'),
+	entry: {
+		app: path.resolve(__dirname, './src/main.js'),
+	},
 	output: {
 		filename: 'bundle.[hash:6].js',
 		path: path.resolve(__dirname, 'dist'),

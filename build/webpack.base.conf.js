@@ -8,6 +8,7 @@
  */
 'use strict'
 const path = require('path');
+const utils = require('./utils');
 const config = require('../config');
 
 function resolve(dir){
@@ -29,7 +30,7 @@ const createLintingRule = () => ({
 module.exports = {
 	target: 'web',
 	entry: {
-		app: path.resolve(__dirname, '../src/js/app.js'),
+		app: path.resolve(__dirname, '../src/main.js'),
 	},
 	output: {
 		filename: '[name].[hash:7].js',
@@ -55,7 +56,7 @@ module.exports = {
 						options: {
 							limit: 10000,    // 小于10000b的图片自动转成base64格式，并且不会存在实体图片
 							outputPath: './',   // 图片打包后存放的目录
-							name: 'img/[name][hash:7].[ext]',
+							name: utils.assetsPath('img/[name][hash:7].[ext]'),
 						}
 					}
 				]

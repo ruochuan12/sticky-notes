@@ -1,5 +1,5 @@
 /**
- * @file app.js
+ * @file main.js
  * @desc 便签
  * @version 0.1.2
  * @author 轩辕Rowboat <lxchuan12@163.com>
@@ -7,9 +7,9 @@
  * @update 2018-04-30
  * @copyright 2017
  */
-import '../styles/index';
-import '../img/btn-close.png';
-import '../favicon.ico';
+import './styles/index';
+import './assets/img/btn-close.png';
+import './favicon.ico';
 // app
 var app = {
 	utils: {},
@@ -367,7 +367,7 @@ app.store = {
 // console.log(1);
 if(module.hot){
 	// 实现热更新
-	module.hot.accept('../styles/index.less', function(){
+	module.hot.accept('./styles/index.less', function(){
 		console.log('hot-accept-style-less-2');
 	});
 }
