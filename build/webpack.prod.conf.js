@@ -14,12 +14,11 @@ const merge = require('webpack-merge');
 const baseWebpackConfig = require('./webpack.base.conf');
 const chalk = require('chalk');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-// const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyjsWebpackPlugin = require('uglifyjs-webpack-plugin');
-const ProgressBarWebpackPlugin = require('progress-bar-webpack-plugin');
+const progressBarWebpackPlugin = require('progress-bar-webpack-plugin');
 
 const env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
@@ -30,23 +29,24 @@ const buildWebpackConfig = merge(baseWebpackConfig, {
     module: {
         rules: [{
             test: /\.less$/,
-            use: [
-                {
-                    loader: 'style-loader',
-                },
-                {
-                    loader: 'css-loader',
-                    // options:{
-                    //     minimize: true //css压缩
-                    // }
-                },
-                {
-                    loader: 'less-loader'
-                },
-                {
-                    loader: 'postcss-loader',
-                }
-            ]
+            use: ExtractTextWebpackPlugin.extract({
+                fallback: 'style-loader',
+                // 将css用link的方式引入就不再需要style-loader了
+                use: [
+                    {
+                        loader: 'css-loader',
+                        options:{
+                            minimize: true //css压缩
+                        }
+                    },
+                    {
+                        loader: 'less-loader'
+                    },
+                    {
+                        loader: 'postcss-loader',
+                    }
+                ]
+            })
         }],
     },
     devtool: config.build.productionSourceMap ? config.build.devtool : false,
@@ -56,13 +56,18 @@ const buildWebpackConfig = merge(baseWebpackConfig, {
         chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
     },
     plugins: [
-        new CleanWebpackPlugin('../dist'),
+        // https://www.npmjs.com/package/clean-webpack-plugin allowExternal严重踩坑
+        new CleanWebpackPlugin(path.join(config.build.assetsRoot), {
+            root: __dirname,
+            verbose:  true,
+            allowExternal: true,
+        }),
         new webpack.DefinePlugin({
             'process.env': env
         }),
 		// 拆分后会把css文件放到dist目录下的css/style.css
 		new ExtractTextWebpackPlugin({
-            filename: utils.assetsPath('css/[name].[contenthash].css'),
+            filename: utils.assetsPath('css/[name].[chunkhash].css'),
             allChunks: true,
         }),
         new OptimizeCSSPlugin({
@@ -109,7 +114,7 @@ const buildWebpackConfig = merge(baseWebpackConfig, {
         new webpack.HashedModuleIdsPlugin(),
         // enable scope hoisting
         new webpack.optimize.ModuleConcatenationPlugin(),
-        new ProgressBarWebpackPlugin({
+        new progressBarWebpackPlugin({
 			format: '  build [:bar] ' + chalk.green.bold(':percent') + ' (:elapsed seconds)',
 			clear: false
         }),

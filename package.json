@@ -5,16 +5,16 @@
   "main": "src/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js",
-    "newDev": "cross-env NODE_ENV=development webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
-    "newBuild": "cross-env NODE_ENV=production webpack --config build/webpack.prod.conf.js",
+    "oldDev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "oldBuild": "cross-env NODE_ENV=production webpack --progress --config webpack.config.js",
+    "build": "cross-env NODE_ENV=production webpack --progress --config build/webpack.prod.conf.js",
     "lint": "eslint --ext .js src",
     "precommit": "npm run lint",
     "lint:fix": "npm run lint -- --fix",
     "install:hooks": "cp shell/git-hooks/pre-commit ./.git/hooks/pre-commit",
     "analyz": "cross-env NODE_ENV=production npm_config_report=true npm run build",
-    "stats": "cross-env NODE_ENV=production webpack --config webpack.config.js --profile --json > stats.json"
+    "stats": "cross-env NODE_ENV=production webpack --config build/webpack.prod.conf.js --profile --json > stats.json"
   },
   "keywords": [
     "sticky-notes"

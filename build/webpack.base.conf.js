@@ -34,7 +34,7 @@ module.exports = {
 	},
 	output: {
 		filename: '[name].[hash:7].js',
-		path: path.resolve(__dirname, 'dist'),
+		path: config.build.assetsRoot,
 		publicPath: process.env.NODE_ENV === 'production'
 			? config.build.assetsPublicPath
 			: config.dev.assetsPublicPath
@@ -49,7 +49,7 @@ module.exports = {
 				exclude: /node_modules/  // 排除掉node_modules，优化打包速度
             },
             {
-				test: /\.(jpe?g|png|gif|ico)$/,
+				test: /\.(jpe?g|png|gif)$/,
 				use: [
 					{
 						loader: 'url-loader',

@@ -9,7 +9,6 @@
  */
 import './styles/index';
 import './assets/img/btn-close.png';
-import './favicon.ico';
 // app
 var app = {
 	utils: {},

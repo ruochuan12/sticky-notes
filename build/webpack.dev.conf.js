@@ -47,7 +47,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     },
     devtool: config.dev.devtool,
     devServer: {
-		// contentBase: './dist',
+		contentBase: false,
 		clientLogLevel: 'warning',
 		historyApiFallback: {
 			rewrites: [

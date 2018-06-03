@@ -33,22 +33,22 @@ const config = {
 		app: path.resolve(__dirname, './src/main.js'),
 	},
 	output: {
-		filename: 'bundle.[hash:6].js',
+		filename: 'static/js/[name].[hash].js',
 		path: path.resolve(__dirname, 'dist'),
 	},
 	module: {
 		rules: [
 			{
-				test: /\.(jpe?g|png|gif|ico)$/,
+				test: /\.(jpe?g|png|gif)$/,
 				use: [
 					{
 						loader: 'url-loader',
 						options: {
-							limit: 8192,    // 小于8k的图片自动转成base64格式，并且不会存在实体图片
+							limit: 10000,    // 小于10000b的图片自动转成base64格式，并且不会存在实体图片
 							outputPath: './',   // 图片打包后存放的目录
-							name: '[name].[ext]',
-						}
-					}
+							name: path.resolve(__dirname, 'static/img/[name].[hash:7].[ext]')
+						},
+					},
 				]
 			},
 			{
@@ -98,8 +98,6 @@ const config = {
 				// https://github.com/kangax/html-minifier#options-quick-reference
 			},
 		}),
-		// 拆分后会把css文件放到dist目录下的css/style.css
-		new ExtractTextWebpackPlugin('css/style.css'),
 		// 去除console.log 与webpack 4 不兼容
 		// new webpack.optimize.minimize({
 		//     compress:{
@@ -175,6 +173,7 @@ if(isDev){
 		new webpack.NoEmitOnErrorsPlugin()
 	);
 }else{
+	config.devtool = '#source-map';
 	config.module.rules.unshift({
 		test: /\.less$/,
 		use: ExtractTextWebpackPlugin.extract({
@@ -197,12 +196,17 @@ if(isDev){
 					loader: 'postcss-loader',
 				}
 			]
-		})
+		}),
 	});
-	config.output.filename = 'bundle.[chunkHash:6].js';
+	config.output.filename = 'static/js/[name].[chunkhash].js';
 	// 每次构建前先清除dist目录原有文件
 	config.plugins.unshift(
 		new CleanWebpackPlugin('dist'),
+		// 拆分后会把css文件放到dist目录下的css/
+		new ExtractTextWebpackPlugin({
+			filename: path.resolve(__dirname, 'static/css/[name].[chunkhash].css'),
+			allChunks: true,
+		}),
 	);
 	// 进度条
 	config.plugins.push(
