@@ -33,7 +33,7 @@ const config = {
 		app: path.resolve(__dirname, './src/main.js'),
 	},
 	output: {
-		filename: 'static/js/[name].[hash].js',
+		filename: 'static/js/[name].[hash:7].js',
 		path: path.resolve(__dirname, 'dist'),
 	},
 	module: {
@@ -46,7 +46,7 @@ const config = {
 						options: {
 							limit: 10000,    // 小于10000b的图片自动转成base64格式，并且不会存在实体图片
 							outputPath: './',   // 图片打包后存放的目录
-							name: path.resolve(__dirname, 'static/img/[name].[hash:7].[ext]')
+							name: 'static/img/[name].[hash:7].[ext]',
 						},
 					},
 				]
@@ -87,6 +87,7 @@ const config = {
 			filename: 'index.html',
 			// 配置文件模板
 			template: './src/index.html',
+			inject: true,
 			hash: true, // 会在打包好的bundle.js后面加上hash串
 			favicon: './src/favicon.ico',
 			// HTML 压缩
@@ -119,7 +120,7 @@ const config = {
 					drop_console: true,
 				}
 			},
-			sourceMap: false,
+			sourceMap: true,
 			cache: true,
 			parallel: os.cpus().length * 2
 		})
@@ -199,12 +200,13 @@ if(isDev){
 		}),
 	});
 	config.output.filename = 'static/js/[name].[chunkhash].js';
+	config.output.chunkFilename = 'static/js/[id].[chunkhash].js';
 	// 每次构建前先清除dist目录原有文件
 	config.plugins.unshift(
 		new CleanWebpackPlugin('dist'),
 		// 拆分后会把css文件放到dist目录下的css/
 		new ExtractTextWebpackPlugin({
-			filename: path.resolve(__dirname, 'static/css/[name].[chunkhash].css'),
+			filename: 'static/css/[name].[chunkhash].css',
 			allChunks: true,
 		}),
 	);

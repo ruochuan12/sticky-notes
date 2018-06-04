@@ -65,7 +65,7 @@ const buildWebpackConfig = merge(baseWebpackConfig, {
         new webpack.DefinePlugin({
             'process.env': env
         }),
-		// 拆分后会把css文件放到dist目录下的css/style.css
+		// 拆分后会把css文件放到dist目录下的css/下
 		new ExtractTextWebpackPlugin({
             filename: utils.assetsPath('css/[name].[chunkhash].css'),
             allChunks: true,
@@ -98,7 +98,8 @@ const buildWebpackConfig = merge(baseWebpackConfig, {
                 ? 'index.html'
                 : config.build.index,
 			// 配置文件模板
-			template: path.resolve(__dirname, '../src/index.html'),
+            template: path.resolve(__dirname, '../src/index.html'),
+            inject: true,
 			hash: true, // 会在打包好的bundle.js后面加上hash串
 			favicon: path.resolve(__dirname, '../src/favicon.ico'),
 			// HTML 压缩
