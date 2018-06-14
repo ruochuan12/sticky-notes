@@ -18,6 +18,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyjsWebpackPlugin = require('uglifyjs-webpack-plugin');
+// const ParallelUglifyPlugin = require('webpack-parallel-uglify-plugin');
 const progressBarWebpackPlugin = require('progress-bar-webpack-plugin');
 
 const env = process.env.NODE_ENV === 'testing'
@@ -91,7 +92,23 @@ const buildWebpackConfig = merge(baseWebpackConfig, {
 			sourceMap: config.build.productionSourceMap,
 			cache: config.build.productionCache,
 			parallel: true,
-		}),
+        }),
+        // 使用 ParallelUglifyPlugin
+        // new ParallelUglifyPlugin({
+        //     uglifyJS: {
+        //         output: {
+        //             beautify: false,
+        //             comments: true,
+        //         },
+        //         compress: {
+        //             warnings: false,
+        //             drop_console: true,
+        //             collapse_vars: true,
+        //             reduce_vars: true,
+        //         }
+        //     },
+        //     sourceMap: config.build.productionSourceMap,
+        // }),
         new HtmlWebpackPlugin({
 			// 配置输出文件名和路径
 			filename: process.env.NODE_ENV === 'testing'
