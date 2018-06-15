@@ -1,23 +1,24 @@
+
+
 {
   "errors": [],
   "warnings": [],
   "version": "4.10.2",
-  "hash": "59258b106eeb2ef4737e",
-  "time": 5243,
-  "builtAt": 1528016761526,
+  "hash": "67751fb96b4dc9174f48",
+  "time": 1381,
+  "builtAt": 1529044278700,
   "publicPath": "./",
-  "outputPath": "F:\\git-source\\github\\sticky-notes\\dist",
+  "outputPath": "/home/sunong/git-source/github/sticky-notes/dist",
   "assetsByChunkName": {
     "app": [
       "static/js/app.92816ed6525aa94d161d.js",
-      "static/css/app.92816ed6525aa94d161d.css",
-      "static/js/app.92816ed6525aa94d161d.js.map"
+      "static/css/app.92816ed6525aa94d161d.css"
     ]
   },
   "assets": [
     {
       "name": "static/js/app.92816ed6525aa94d161d.js",
-      "size": 7994,
+      "size": 7941,
       "chunks": [
         0
       ],
@@ -28,25 +29,7 @@
     },
     {
       "name": "static/css/app.92816ed6525aa94d161d.css",
-      "size": 3945,
-      "chunks": [
-        0
-      ],
-      "chunkNames": [
-        "app"
-      ],
-      "emitted": true
-    },
-    {
-      "name": "static/css/app.92816ed6525aa94d161d.css.map",
-      "size": 4476,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": true
-    },
-    {
-      "name": "static/js/app.92816ed6525aa94d161d.js.map",
-      "size": 23610,
+      "size": 3888,
       "chunks": [
         0
       ],
@@ -64,7 +47,7 @@
     },
     {
       "name": "index.html",
-      "size": 854,
+      "size": 838,
       "chunks": [],
       "chunkNames": [],
       "emitted": true
@@ -78,8 +61,7 @@
       ],
       "assets": [
         "static/js/app.92816ed6525aa94d161d.js",
-        "static/css/app.92816ed6525aa94d161d.css",
-        "static/js/app.92816ed6525aa94d161d.js.map"
+        "static/css/app.92816ed6525aa94d161d.css"
       ],
       "children": {},
       "childAssets": {}
@@ -92,8 +74,7 @@
       ],
       "assets": [
         "static/js/app.92816ed6525aa94d161d.js",
-        "static/css/app.92816ed6525aa94d161d.css",
-        "static/js/app.92816ed6525aa94d161d.js.map"
+        "static/css/app.92816ed6525aa94d161d.css"
       ],
       "children": {},
       "childAssets": {}
@@ -111,8 +92,7 @@
       ],
       "files": [
         "static/js/app.92816ed6525aa94d161d.js",
-        "static/css/app.92816ed6525aa94d161d.css",
-        "static/js/app.92816ed6525aa94d161d.js.map"
+        "static/css/app.92816ed6525aa94d161d.css"
       ],
       "hash": "92816ed6525aa94d161d",
       "siblings": [],
@@ -122,7 +102,7 @@
       "modules": [
         {
           "id": "Vtdi",
-          "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.7.1.4@babel-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.0.0@eslint-loader\\index.js??ref--4!F:\\git-source\\github\\sticky-notes\\src\\main.js",
+          "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_babel-loader@7.1.4@babel-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/node_modules/_eslint-loader@2.0.0@eslint-loader/index.js??ref--4!/home/sunong/git-source/github/sticky-notes/src/main.js",
           "name": "./src/main.js",
           "index": 0,
           "index2": 2,
@@ -139,8 +119,8 @@
           "issuerName": null,
           "issuerPath": null,
           "profile": {
-            "factory": 524,
-            "building": 3353
+            "factory": 228,
+            "building": 723
           },
           "failed": false,
           "errors": 0,
@@ -153,7 +133,7 @@
               "module": null,
               "moduleName": null,
               "type": "single entry",
-              "userRequest": "F:\\git-source\\github\\sticky-notes\\src\\main.js",
+              "userRequest": "/home/sunong/git-source/github/sticky-notes/src/main.js",
               "loc": "app"
             }
           ],
@@ -168,7 +148,7 @@
         },
         {
           "id": "ZuTw",
-          "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.1.0.1@url-loader\\dist\\cjs.js??ref--6-0!F:\\git-source\\github\\sticky-notes\\src\\assets\\img\\btn-close.png",
+          "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_url-loader@1.0.1@url-loader/dist/cjs.js??ref--6-0!/home/sunong/git-source/github/sticky-notes/src/assets/img/btn-close.png",
           "name": "./src/assets/img/btn-close.png",
           "index": 2,
           "index2": 1,
@@ -180,23 +160,23 @@
           "chunks": [
             0
           ],
-          "issuer": "F:\\git-source\\github\\sticky-notes\\node_modules\\.7.1.4@babel-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.0.0@eslint-loader\\index.js??ref--4!F:\\git-source\\github\\sticky-notes\\src\\main.js",
+          "issuer": "/home/sunong/git-source/github/sticky-notes/node_modules/_babel-loader@7.1.4@babel-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/node_modules/_eslint-loader@2.0.0@eslint-loader/index.js??ref--4!/home/sunong/git-source/github/sticky-notes/src/main.js",
           "issuerId": "Vtdi",
           "issuerName": "./src/main.js",
           "issuerPath": [
             {
               "id": "Vtdi",
-              "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.7.1.4@babel-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.0.0@eslint-loader\\index.js??ref--4!F:\\git-source\\github\\sticky-notes\\src\\main.js",
+              "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_babel-loader@7.1.4@babel-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/node_modules/_eslint-loader@2.0.0@eslint-loader/index.js??ref--4!/home/sunong/git-source/github/sticky-notes/src/main.js",
               "name": "./src/main.js",
               "profile": {
-                "factory": 524,
-                "building": 3353
+                "factory": 228,
+                "building": 723
               }
             }
           ],
           "profile": {
-            "factory": 29,
-            "building": 711
+            "factory": 84,
+            "building": 174
           },
           "failed": false,
           "errors": 0,
@@ -205,7 +185,7 @@
           "reasons": [
             {
               "moduleId": "Vtdi",
-              "moduleIdentifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.7.1.4@babel-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.0.0@eslint-loader\\index.js??ref--4!F:\\git-source\\github\\sticky-notes\\src\\main.js",
+              "moduleIdentifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_babel-loader@7.1.4@babel-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/node_modules/_eslint-loader@2.0.0@eslint-loader/index.js??ref--4!/home/sunong/git-source/github/sticky-notes/src/main.js",
               "module": "./src/main.js",
               "moduleName": "./src/main.js",
               "type": "cjs require",
@@ -224,7 +204,7 @@
         },
         {
           "id": "pLGG",
-          "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.4.0.0-beta.0@extract-text-webpack-plugin\\dist\\loader.js??ref--7-0!F:\\git-source\\github\\sticky-notes\\node_modules\\.0.21.0@style-loader\\index.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\index.js??ref--7-2!F:\\git-source\\github\\sticky-notes\\node_modules\\.4.1.0@less-loader\\dist\\cjs.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.1.5@postcss-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\src\\styles\\index.less",
+          "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_extract-text-webpack-plugin@4.0.0-beta.0@extract-text-webpack-plugin/dist/loader.js??ref--7-0!/home/sunong/git-source/github/sticky-notes/node_modules/_style-loader@0.21.0@style-loader/index.js!/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/index.js??ref--7-2!/home/sunong/git-source/github/sticky-notes/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!/home/sunong/git-source/github/sticky-notes/node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/src/styles/index.less",
           "name": "./src/styles/index.less",
           "index": 1,
           "index2": 0,
@@ -236,23 +216,23 @@
           "chunks": [
             0
           ],
-          "issuer": "F:\\git-source\\github\\sticky-notes\\node_modules\\.7.1.4@babel-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.0.0@eslint-loader\\index.js??ref--4!F:\\git-source\\github\\sticky-notes\\src\\main.js",
+          "issuer": "/home/sunong/git-source/github/sticky-notes/node_modules/_babel-loader@7.1.4@babel-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/node_modules/_eslint-loader@2.0.0@eslint-loader/index.js??ref--4!/home/sunong/git-source/github/sticky-notes/src/main.js",
           "issuerId": "Vtdi",
           "issuerName": "./src/main.js",
           "issuerPath": [
             {
               "id": "Vtdi",
-              "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.7.1.4@babel-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.0.0@eslint-loader\\index.js??ref--4!F:\\git-source\\github\\sticky-notes\\src\\main.js",
+              "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_babel-loader@7.1.4@babel-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/node_modules/_eslint-loader@2.0.0@eslint-loader/index.js??ref--4!/home/sunong/git-source/github/sticky-notes/src/main.js",
               "name": "./src/main.js",
               "profile": {
-                "factory": 524,
-                "building": 3353
+                "factory": 228,
+                "building": 723
               }
             }
           ],
           "profile": {
-            "factory": 29,
-            "building": 711
+            "factory": 84,
+            "building": 174
           },
           "failed": false,
           "errors": 0,
@@ -261,7 +241,7 @@
           "reasons": [
             {
               "moduleId": "Vtdi",
-              "moduleIdentifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.7.1.4@babel-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.0.0@eslint-loader\\index.js??ref--4!F:\\git-source\\github\\sticky-notes\\src\\main.js",
+              "moduleIdentifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_babel-loader@7.1.4@babel-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/node_modules/_eslint-loader@2.0.0@eslint-loader/index.js??ref--4!/home/sunong/git-source/github/sticky-notes/src/main.js",
               "module": "./src/main.js",
               "moduleName": "./src/main.js",
               "type": "cjs require",
@@ -286,7 +266,7 @@
           "moduleIdentifier": "",
           "moduleName": "",
           "loc": "app",
-          "request": "F:\\git-source\\github\\sticky-notes\\src\\main.js",
+          "request": "/home/sunong/git-source/github/sticky-notes/src/main.js",
           "reasons": []
         }
       ]
@@ -295,7 +275,7 @@
   "modules": [
     {
       "id": "Vtdi",
-      "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.7.1.4@babel-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.0.0@eslint-loader\\index.js??ref--4!F:\\git-source\\github\\sticky-notes\\src\\main.js",
+      "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_babel-loader@7.1.4@babel-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/node_modules/_eslint-loader@2.0.0@eslint-loader/index.js??ref--4!/home/sunong/git-source/github/sticky-notes/src/main.js",
       "name": "./src/main.js",
       "index": 0,
       "index2": 2,
@@ -312,8 +292,8 @@
       "issuerName": null,
       "issuerPath": null,
       "profile": {
-        "factory": 524,
-        "building": 3353
+        "factory": 228,
+        "building": 723
       },
       "failed": false,
       "errors": 0,
@@ -326,7 +306,7 @@
           "module": null,
           "moduleName": null,
           "type": "single entry",
-          "userRequest": "F:\\git-source\\github\\sticky-notes\\src\\main.js",
+          "userRequest": "/home/sunong/git-source/github/sticky-notes/src/main.js",
           "loc": "app"
         }
       ],
@@ -341,7 +321,7 @@
     },
     {
       "id": "ZuTw",
-      "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.1.0.1@url-loader\\dist\\cjs.js??ref--6-0!F:\\git-source\\github\\sticky-notes\\src\\assets\\img\\btn-close.png",
+      "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_url-loader@1.0.1@url-loader/dist/cjs.js??ref--6-0!/home/sunong/git-source/github/sticky-notes/src/assets/img/btn-close.png",
       "name": "./src/assets/img/btn-close.png",
       "index": 2,
       "index2": 1,
@@ -353,23 +333,23 @@
       "chunks": [
         0
       ],
-      "issuer": "F:\\git-source\\github\\sticky-notes\\node_modules\\.7.1.4@babel-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.0.0@eslint-loader\\index.js??ref--4!F:\\git-source\\github\\sticky-notes\\src\\main.js",
+      "issuer": "/home/sunong/git-source/github/sticky-notes/node_modules/_babel-loader@7.1.4@babel-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/node_modules/_eslint-loader@2.0.0@eslint-loader/index.js??ref--4!/home/sunong/git-source/github/sticky-notes/src/main.js",
       "issuerId": "Vtdi",
       "issuerName": "./src/main.js",
       "issuerPath": [
         {
           "id": "Vtdi",
-          "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.7.1.4@babel-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.0.0@eslint-loader\\index.js??ref--4!F:\\git-source\\github\\sticky-notes\\src\\main.js",
+          "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_babel-loader@7.1.4@babel-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/node_modules/_eslint-loader@2.0.0@eslint-loader/index.js??ref--4!/home/sunong/git-source/github/sticky-notes/src/main.js",
           "name": "./src/main.js",
           "profile": {
-            "factory": 524,
-            "building": 3353
+            "factory": 228,
+            "building": 723
           }
         }
       ],
       "profile": {
-        "factory": 29,
-        "building": 711
+        "factory": 84,
+        "building": 174
       },
       "failed": false,
       "errors": 0,
@@ -378,7 +358,7 @@
       "reasons": [
         {
           "moduleId": "Vtdi",
-          "moduleIdentifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.7.1.4@babel-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.0.0@eslint-loader\\index.js??ref--4!F:\\git-source\\github\\sticky-notes\\src\\main.js",
+          "moduleIdentifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_babel-loader@7.1.4@babel-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/node_modules/_eslint-loader@2.0.0@eslint-loader/index.js??ref--4!/home/sunong/git-source/github/sticky-notes/src/main.js",
           "module": "./src/main.js",
           "moduleName": "./src/main.js",
           "type": "cjs require",
@@ -397,7 +377,7 @@
     },
     {
       "id": "pLGG",
-      "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.4.0.0-beta.0@extract-text-webpack-plugin\\dist\\loader.js??ref--7-0!F:\\git-source\\github\\sticky-notes\\node_modules\\.0.21.0@style-loader\\index.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\index.js??ref--7-2!F:\\git-source\\github\\sticky-notes\\node_modules\\.4.1.0@less-loader\\dist\\cjs.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.1.5@postcss-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\src\\styles\\index.less",
+      "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_extract-text-webpack-plugin@4.0.0-beta.0@extract-text-webpack-plugin/dist/loader.js??ref--7-0!/home/sunong/git-source/github/sticky-notes/node_modules/_style-loader@0.21.0@style-loader/index.js!/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/index.js??ref--7-2!/home/sunong/git-source/github/sticky-notes/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!/home/sunong/git-source/github/sticky-notes/node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/src/styles/index.less",
       "name": "./src/styles/index.less",
       "index": 1,
       "index2": 0,
@@ -409,23 +389,23 @@
       "chunks": [
         0
       ],
-      "issuer": "F:\\git-source\\github\\sticky-notes\\node_modules\\.7.1.4@babel-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.0.0@eslint-loader\\index.js??ref--4!F:\\git-source\\github\\sticky-notes\\src\\main.js",
+      "issuer": "/home/sunong/git-source/github/sticky-notes/node_modules/_babel-loader@7.1.4@babel-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/node_modules/_eslint-loader@2.0.0@eslint-loader/index.js??ref--4!/home/sunong/git-source/github/sticky-notes/src/main.js",
       "issuerId": "Vtdi",
       "issuerName": "./src/main.js",
       "issuerPath": [
         {
           "id": "Vtdi",
-          "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.7.1.4@babel-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.0.0@eslint-loader\\index.js??ref--4!F:\\git-source\\github\\sticky-notes\\src\\main.js",
+          "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_babel-loader@7.1.4@babel-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/node_modules/_eslint-loader@2.0.0@eslint-loader/index.js??ref--4!/home/sunong/git-source/github/sticky-notes/src/main.js",
           "name": "./src/main.js",
           "profile": {
-            "factory": 524,
-            "building": 3353
+            "factory": 228,
+            "building": 723
           }
         }
       ],
       "profile": {
-        "factory": 29,
-        "building": 711
+        "factory": 84,
+        "building": 174
       },
       "failed": false,
       "errors": 0,
@@ -434,7 +414,7 @@
       "reasons": [
         {
           "moduleId": "Vtdi",
-          "moduleIdentifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.7.1.4@babel-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.0.0@eslint-loader\\index.js??ref--4!F:\\git-source\\github\\sticky-notes\\src\\main.js",
+          "moduleIdentifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_babel-loader@7.1.4@babel-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/node_modules/_eslint-loader@2.0.0@eslint-loader/index.js??ref--4!/home/sunong/git-source/github/sticky-notes/src/main.js",
           "module": "./src/main.js",
           "moduleName": "./src/main.js",
           "type": "cjs require",
@@ -458,7 +438,7 @@
       "errors": [],
       "warnings": [],
       "publicPath": "./",
-      "outputPath": "F:\\git-source\\github\\sticky-notes\\dist",
+      "outputPath": "/home/sunong/git-source/github/sticky-notes/dist",
       "assetsByChunkName": {},
       "assets": [],
       "filteredAssets": 0,
@@ -492,80 +472,24 @@
           "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 6972,
+          "size": 6994,
           "names": [],
           "files": [
             "extract-text-webpack-plugin-output-filename"
           ],
-          "hash": "376390807099aa7287ab",
+          "hash": "608e76f5d122612d90e2",
           "siblings": [],
           "parents": [],
           "children": [],
           "childrenByOrder": {},
           "modules": [
             {
-              "id": "3G5m",
-              "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\lib\\css-base.js",
-              "name": "./node_modules/.0.28.11@css-loader/lib/css-base.js",
-              "index": 2,
-              "index2": 1,
-              "size": 2260,
-              "cacheable": true,
-              "built": true,
-              "optional": false,
-              "prefetched": false,
-              "chunks": [
-                0
-              ],
-              "issuer": "F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\index.js??ref--7-2!F:\\git-source\\github\\sticky-notes\\node_modules\\.4.1.0@less-loader\\dist\\cjs.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.1.5@postcss-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\src\\styles\\index.less",
-              "issuerId": "FNcr",
-              "issuerName": "./node_modules/.0.28.11@css-loader??ref--7-2!./node_modules/.4.1.0@less-loader/dist/cjs.js!./node_modules/.2.1.5@postcss-loader/lib!./src/styles/index.less",
-              "issuerPath": [
-                {
-                  "id": "FNcr",
-                  "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\index.js??ref--7-2!F:\\git-source\\github\\sticky-notes\\node_modules\\.4.1.0@less-loader\\dist\\cjs.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.1.5@postcss-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\src\\styles\\index.less",
-                  "name": "./node_modules/.0.28.11@css-loader??ref--7-2!./node_modules/.4.1.0@less-loader/dist/cjs.js!./node_modules/.2.1.5@postcss-loader/lib!./src/styles/index.less",
-                  "profile": {
-                    "factory": 10,
-                    "building": 651
-                  }
-                }
-              ],
-              "profile": {
-                "factory": 14,
-                "building": 6
-              },
-              "failed": false,
-              "errors": 0,
-              "warnings": 0,
-              "assets": [],
-              "reasons": [
-                {
-                  "moduleId": "FNcr",
-                  "moduleIdentifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\index.js??ref--7-2!F:\\git-source\\github\\sticky-notes\\node_modules\\.4.1.0@less-loader\\dist\\cjs.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.1.5@postcss-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\src\\styles\\index.less",
-                  "module": "./node_modules/.0.28.11@css-loader??ref--7-2!./node_modules/.4.1.0@less-loader/dist/cjs.js!./node_modules/.2.1.5@postcss-loader/lib!./src/styles/index.less",
-                  "moduleName": "./node_modules/.0.28.11@css-loader??ref--7-2!./node_modules/.4.1.0@less-loader/dist/cjs.js!./node_modules/.2.1.5@postcss-loader/lib!./src/styles/index.less",
-                  "type": "cjs require",
-                  "userRequest": "../../node_modules/.0.28.11@css-loader/lib/css-base.js",
-                  "loc": "2:27-92"
-                }
-              ],
-              "usedExports": true,
-              "providedExports": null,
-              "optimizationBailout": [
-                "ModuleConcatenation bailout: Module is not an ECMAScript module",
-                "ModuleConcatenation bailout: Module is not an ECMAScript module"
-              ],
-              "depth": 1,
-              "source": "/*\n\tMIT License http://www.opensource.org/licenses/mit-license.php\n\tAuthor Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\nmodule.exports = function(useSourceMap) {\n\tvar list = [];\n\n\t// return the list of modules as css string\n\tlist.toString = function toString() {\n\t\treturn this.map(function (item) {\n\t\t\tvar content = cssWithMappingToString(item, useSourceMap);\n\t\t\tif(item[2]) {\n\t\t\t\treturn \"@media \" + item[2] + \"{\" + content + \"}\";\n\t\t\t} else {\n\t\t\t\treturn content;\n\t\t\t}\n\t\t}).join(\"\");\n\t};\n\n\t// import a list of modules into the list\n\tlist.i = function(modules, mediaQuery) {\n\t\tif(typeof modules === \"string\")\n\t\t\tmodules = [[null, modules, \"\"]];\n\t\tvar alreadyImportedModules = {};\n\t\tfor(var i = 0; i < this.length; i++) {\n\t\t\tvar id = this[i][0];\n\t\t\tif(typeof id === \"number\")\n\t\t\t\talreadyImportedModules[id] = true;\n\t\t}\n\t\tfor(i = 0; i < modules.length; i++) {\n\t\t\tvar item = modules[i];\n\t\t\t// skip already imported module\n\t\t\t// this implementation is not 100% perfect for weird media query combinations\n\t\t\t//  when a module is imported multiple times with different media queries.\n\t\t\t//  I hope this will never occur (Hey this way we have smaller bundles)\n\t\t\tif(typeof item[0] !== \"number\" || !alreadyImportedModules[item[0]]) {\n\t\t\t\tif(mediaQuery && !item[2]) {\n\t\t\t\t\titem[2] = mediaQuery;\n\t\t\t\t} else if(mediaQuery) {\n\t\t\t\t\titem[2] = \"(\" + item[2] + \") and (\" + mediaQuery + \")\";\n\t\t\t\t}\n\t\t\t\tlist.push(item);\n\t\t\t}\n\t\t}\n\t};\n\treturn list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n\tvar content = item[1] || '';\n\tvar cssMapping = item[3];\n\tif (!cssMapping) {\n\t\treturn content;\n\t}\n\n\tif (useSourceMap && typeof btoa === 'function') {\n\t\tvar sourceMapping = toComment(cssMapping);\n\t\tvar sourceURLs = cssMapping.sources.map(function (source) {\n\t\t\treturn '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'\n\t\t});\n\n\t\treturn [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n\t}\n\n\treturn [content].join('\\n');\n}\n\n// Adapted from convert-source-map (MIT)\nfunction toComment(sourceMap) {\n\t// eslint-disable-next-line no-undef\n\tvar base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n\tvar data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;\n\n\treturn '/*# ' + data + ' */';\n}\n"
-            },
-            {
-              "id": "FNcr",
-              "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\index.js??ref--7-2!F:\\git-source\\github\\sticky-notes\\node_modules\\.4.1.0@less-loader\\dist\\cjs.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.1.5@postcss-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\src\\styles\\index.less",
-              "name": "./node_modules/.0.28.11@css-loader??ref--7-2!./node_modules/.4.1.0@less-loader/dist/cjs.js!./node_modules/.2.1.5@postcss-loader/lib!./src/styles/index.less",
+              "id": "/jlY",
+              "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/index.js??ref--7-2!/home/sunong/git-source/github/sticky-notes/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!/home/sunong/git-source/github/sticky-notes/node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/src/styles/index.less",
+              "name": "./node_modules/_css-loader@0.28.11@css-loader??ref--7-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./node_modules/_postcss-loader@2.1.5@postcss-loader/lib!./src/styles/index.less",
               "index": 0,
               "index2": 3,
-              "size": 1247,
+              "size": 1269,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -578,8 +502,8 @@
               "issuerName": null,
               "issuerPath": null,
               "profile": {
-                "factory": 10,
-                "building": 651
+                "factory": 2,
+                "building": 157
               },
               "failed": false,
               "errors": 0,
@@ -592,7 +516,7 @@
                   "module": null,
                   "moduleName": null,
                   "type": "single entry",
-                  "userRequest": "!!F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\index.js??ref--7-2!F:\\git-source\\github\\sticky-notes\\node_modules\\.4.1.0@less-loader\\dist\\cjs.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.1.5@postcss-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\src\\styles\\index.less"
+                  "userRequest": "!!/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/index.js??ref--7-2!/home/sunong/git-source/github/sticky-notes/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!/home/sunong/git-source/github/sticky-notes/node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/src/styles/index.less"
                 }
               ],
               "usedExports": true,
@@ -602,11 +526,11 @@
                 "ModuleConcatenation bailout: Module is not an ECMAScript module"
               ],
               "depth": 0,
-              "source": "var escape = require(\"../../node_modules/.0.28.11@css-loader/lib/url/escape.js\");\nexports = module.exports = require(\"../../node_modules/.0.28.11@css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.id, \"*{margin:0;padding:0}body{font:14px/1.3 \\\\\\\\5FAE\\\\8F6F\\\\96C5\\\\9ED1;margin:20px}#create,#remove{margin:10px;width:100px;height:30px;line-height:30px;border:none;font-size:14px;background:#ccc;cursor:pointer;outline:none;border-radius:5px}#create:hover,#remove:hover{background:#e3e3e3}.m-note{position:absolute;left:20px;top:70px;width:200px;min-height:276px;max-height:452px;background-color:#c4e5ff;-webkit-box-shadow:0 5px 10px rgba(0,0,0,.5);box-shadow:0 5px 10px rgba(0,0,0,.5)}.m-note .u-edit{box-sizing:border-box;width:200px;min-height:250px;max-height:400px;padding:10px;outline:none;overflow-x:hidden;overflow-y:auto}.m-note:hover .u-close{display:block}.m-note .u-bar{height:26px;background:#0179d7;cursor:move}.m-note .u-close{width:30px;height:30px;position:absolute;left:-15px;top:-15px;background:url(\" + escape(require(\"../assets/img/btn-close.png\")) + \") no-repeat;display:none;cursor:pointer}.m-note .m-time{line-height:26px;height:26px;padding:0 10px;background-color:#c4e5ff}\", \"\"]);\n\n// exports\n"
+              "source": "var escape = require(\"../../node_modules/_css-loader@0.28.11@css-loader/lib/url/escape.js\");\nexports = module.exports = require(\"../../node_modules/_css-loader@0.28.11@css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.id, \"*{margin:0;padding:0}body{font:14px/1.3 \\\\\\\\5FAE\\\\8F6F\\\\96C5\\\\9ED1;margin:20px}#create,#remove{margin:10px;width:100px;height:30px;line-height:30px;border:none;font-size:14px;background:#ccc;cursor:pointer;outline:none;border-radius:5px}#create:hover,#remove:hover{background:#e3e3e3}.m-note{position:absolute;left:20px;top:70px;width:200px;min-height:276px;max-height:452px;background-color:#c4e5ff;-webkit-box-shadow:0 5px 10px rgba(0,0,0,.5);box-shadow:0 5px 10px rgba(0,0,0,.5)}.m-note .u-edit{box-sizing:border-box;width:200px;min-height:250px;max-height:400px;padding:10px;outline:none;overflow-x:hidden;overflow-y:auto}.m-note:hover .u-close{display:block}.m-note .u-bar{height:26px;background:#0179d7;cursor:move}.m-note .u-close{width:30px;height:30px;position:absolute;left:-15px;top:-15px;background:url(\" + escape(require(\"../assets/img/btn-close.png\")) + \") no-repeat;display:none;cursor:pointer}.m-note .m-time{line-height:26px;height:26px;padding:0 10px;background-color:#c4e5ff}\", \"\"]);\n\n// exports\n"
             },
             {
               "id": "ZuTw",
-              "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.1.0.1@url-loader\\dist\\cjs.js??ref--6-0!F:\\git-source\\github\\sticky-notes\\src\\assets\\img\\btn-close.png",
+              "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_url-loader@1.0.1@url-loader/dist/cjs.js??ref--6-0!/home/sunong/git-source/github/sticky-notes/src/assets/img/btn-close.png",
               "name": "./src/assets/img/btn-close.png",
               "index": 3,
               "index2": 2,
@@ -618,23 +542,23 @@
               "chunks": [
                 0
               ],
-              "issuer": "F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\index.js??ref--7-2!F:\\git-source\\github\\sticky-notes\\node_modules\\.4.1.0@less-loader\\dist\\cjs.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.1.5@postcss-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\src\\styles\\index.less",
-              "issuerId": "FNcr",
-              "issuerName": "./node_modules/.0.28.11@css-loader??ref--7-2!./node_modules/.4.1.0@less-loader/dist/cjs.js!./node_modules/.2.1.5@postcss-loader/lib!./src/styles/index.less",
+              "issuer": "/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/index.js??ref--7-2!/home/sunong/git-source/github/sticky-notes/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!/home/sunong/git-source/github/sticky-notes/node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/src/styles/index.less",
+              "issuerId": "/jlY",
+              "issuerName": "./node_modules/_css-loader@0.28.11@css-loader??ref--7-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./node_modules/_postcss-loader@2.1.5@postcss-loader/lib!./src/styles/index.less",
               "issuerPath": [
                 {
-                  "id": "FNcr",
-                  "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\index.js??ref--7-2!F:\\git-source\\github\\sticky-notes\\node_modules\\.4.1.0@less-loader\\dist\\cjs.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.1.5@postcss-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\src\\styles\\index.less",
-                  "name": "./node_modules/.0.28.11@css-loader??ref--7-2!./node_modules/.4.1.0@less-loader/dist/cjs.js!./node_modules/.2.1.5@postcss-loader/lib!./src/styles/index.less",
+                  "id": "/jlY",
+                  "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/index.js??ref--7-2!/home/sunong/git-source/github/sticky-notes/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!/home/sunong/git-source/github/sticky-notes/node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/src/styles/index.less",
+                  "name": "./node_modules/_css-loader@0.28.11@css-loader??ref--7-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./node_modules/_postcss-loader@2.1.5@postcss-loader/lib!./src/styles/index.less",
                   "profile": {
-                    "factory": 10,
-                    "building": 651
+                    "factory": 2,
+                    "building": 157
                   }
                 }
               ],
               "profile": {
-                "factory": 14,
-                "building": 6
+                "factory": 2,
+                "building": 3
               },
               "failed": false,
               "errors": 0,
@@ -642,10 +566,10 @@
               "assets": [],
               "reasons": [
                 {
-                  "moduleId": "FNcr",
-                  "moduleIdentifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\index.js??ref--7-2!F:\\git-source\\github\\sticky-notes\\node_modules\\.4.1.0@less-loader\\dist\\cjs.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.1.5@postcss-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\src\\styles\\index.less",
-                  "module": "./node_modules/.0.28.11@css-loader??ref--7-2!./node_modules/.4.1.0@less-loader/dist/cjs.js!./node_modules/.2.1.5@postcss-loader/lib!./src/styles/index.less",
-                  "moduleName": "./node_modules/.0.28.11@css-loader??ref--7-2!./node_modules/.4.1.0@less-loader/dist/cjs.js!./node_modules/.2.1.5@postcss-loader/lib!./src/styles/index.less",
+                  "moduleId": "/jlY",
+                  "moduleIdentifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/index.js??ref--7-2!/home/sunong/git-source/github/sticky-notes/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!/home/sunong/git-source/github/sticky-notes/node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/src/styles/index.less",
+                  "module": "./node_modules/_css-loader@0.28.11@css-loader??ref--7-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./node_modules/_postcss-loader@2.1.5@postcss-loader/lib!./src/styles/index.less",
+                  "moduleName": "./node_modules/_css-loader@0.28.11@css-loader??ref--7-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./node_modules/_postcss-loader@2.1.5@postcss-loader/lib!./src/styles/index.less",
                   "type": "cjs require",
                   "userRequest": "../assets/img/btn-close.png",
                   "loc": "7:852-890"
@@ -661,9 +585,9 @@
               "source": "module.exports = \"data:image/png;base64,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\""
             },
             {
-              "id": "cLE4",
-              "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\lib\\url\\escape.js",
-              "name": "./node_modules/.0.28.11@css-loader/lib/url/escape.js",
+              "id": "iTuz",
+              "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/lib/url/escape.js",
+              "name": "./node_modules/_css-loader@0.28.11@css-loader/lib/url/escape.js",
               "index": 1,
               "index2": 0,
               "size": 448,
@@ -674,23 +598,23 @@
               "chunks": [
                 0
               ],
-              "issuer": "F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\index.js??ref--7-2!F:\\git-source\\github\\sticky-notes\\node_modules\\.4.1.0@less-loader\\dist\\cjs.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.1.5@postcss-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\src\\styles\\index.less",
-              "issuerId": "FNcr",
-              "issuerName": "./node_modules/.0.28.11@css-loader??ref--7-2!./node_modules/.4.1.0@less-loader/dist/cjs.js!./node_modules/.2.1.5@postcss-loader/lib!./src/styles/index.less",
+              "issuer": "/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/index.js??ref--7-2!/home/sunong/git-source/github/sticky-notes/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!/home/sunong/git-source/github/sticky-notes/node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/src/styles/index.less",
+              "issuerId": "/jlY",
+              "issuerName": "./node_modules/_css-loader@0.28.11@css-loader??ref--7-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./node_modules/_postcss-loader@2.1.5@postcss-loader/lib!./src/styles/index.less",
               "issuerPath": [
                 {
-                  "id": "FNcr",
-                  "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\index.js??ref--7-2!F:\\git-source\\github\\sticky-notes\\node_modules\\.4.1.0@less-loader\\dist\\cjs.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.1.5@postcss-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\src\\styles\\index.less",
-                  "name": "./node_modules/.0.28.11@css-loader??ref--7-2!./node_modules/.4.1.0@less-loader/dist/cjs.js!./node_modules/.2.1.5@postcss-loader/lib!./src/styles/index.less",
+                  "id": "/jlY",
+                  "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/index.js??ref--7-2!/home/sunong/git-source/github/sticky-notes/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!/home/sunong/git-source/github/sticky-notes/node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/src/styles/index.less",
+                  "name": "./node_modules/_css-loader@0.28.11@css-loader??ref--7-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./node_modules/_postcss-loader@2.1.5@postcss-loader/lib!./src/styles/index.less",
                   "profile": {
-                    "factory": 10,
-                    "building": 651
+                    "factory": 2,
+                    "building": 157
                   }
                 }
               ],
               "profile": {
-                "factory": 14,
-                "building": 6
+                "factory": 2,
+                "building": 3
               },
               "failed": false,
               "errors": 0,
@@ -698,13 +622,13 @@
               "assets": [],
               "reasons": [
                 {
-                  "moduleId": "FNcr",
-                  "moduleIdentifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\index.js??ref--7-2!F:\\git-source\\github\\sticky-notes\\node_modules\\.4.1.0@less-loader\\dist\\cjs.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.1.5@postcss-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\src\\styles\\index.less",
-                  "module": "./node_modules/.0.28.11@css-loader??ref--7-2!./node_modules/.4.1.0@less-loader/dist/cjs.js!./node_modules/.2.1.5@postcss-loader/lib!./src/styles/index.less",
-                  "moduleName": "./node_modules/.0.28.11@css-loader??ref--7-2!./node_modules/.4.1.0@less-loader/dist/cjs.js!./node_modules/.2.1.5@postcss-loader/lib!./src/styles/index.less",
+                  "moduleId": "/jlY",
+                  "moduleIdentifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/index.js??ref--7-2!/home/sunong/git-source/github/sticky-notes/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!/home/sunong/git-source/github/sticky-notes/node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/src/styles/index.less",
+                  "module": "./node_modules/_css-loader@0.28.11@css-loader??ref--7-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./node_modules/_postcss-loader@2.1.5@postcss-loader/lib!./src/styles/index.less",
+                  "moduleName": "./node_modules/_css-loader@0.28.11@css-loader??ref--7-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./node_modules/_postcss-loader@2.1.5@postcss-loader/lib!./src/styles/index.less",
                   "type": "cjs require",
-                  "userRequest": "../../node_modules/.0.28.11@css-loader/lib/url/escape.js",
-                  "loc": "1:13-80"
+                  "userRequest": "../../node_modules/_css-loader@0.28.11@css-loader/lib/url/escape.js",
+                  "loc": "1:13-91"
                 }
               ],
               "usedExports": true,
@@ -715,6 +639,62 @@
               ],
               "depth": 1,
               "source": "module.exports = function escape(url) {\n    if (typeof url !== 'string') {\n        return url\n    }\n    // If url is already wrapped in quotes, remove them\n    if (/^['\"].*['\"]$/.test(url)) {\n        url = url.slice(1, -1);\n    }\n    // Should url be wrapped?\n    // See https://drafts.csswg.org/css-values-3/#urls\n    if (/[\"'() \\t\\n]/.test(url)) {\n        return '\"' + url.replace(/\"/g, '\\\\\"').replace(/\\n/g, '\\\\n') + '\"'\n    }\n\n    return url\n}\n"
+            },
+            {
+              "id": "lbwJ",
+              "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/lib/css-base.js",
+              "name": "./node_modules/_css-loader@0.28.11@css-loader/lib/css-base.js",
+              "index": 2,
+              "index2": 1,
+              "size": 2260,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": "/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/index.js??ref--7-2!/home/sunong/git-source/github/sticky-notes/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!/home/sunong/git-source/github/sticky-notes/node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/src/styles/index.less",
+              "issuerId": "/jlY",
+              "issuerName": "./node_modules/_css-loader@0.28.11@css-loader??ref--7-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./node_modules/_postcss-loader@2.1.5@postcss-loader/lib!./src/styles/index.less",
+              "issuerPath": [
+                {
+                  "id": "/jlY",
+                  "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/index.js??ref--7-2!/home/sunong/git-source/github/sticky-notes/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!/home/sunong/git-source/github/sticky-notes/node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/src/styles/index.less",
+                  "name": "./node_modules/_css-loader@0.28.11@css-loader??ref--7-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./node_modules/_postcss-loader@2.1.5@postcss-loader/lib!./src/styles/index.less",
+                  "profile": {
+                    "factory": 2,
+                    "building": 157
+                  }
+                }
+              ],
+              "profile": {
+                "factory": 2,
+                "building": 3
+              },
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": "/jlY",
+                  "moduleIdentifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/index.js??ref--7-2!/home/sunong/git-source/github/sticky-notes/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!/home/sunong/git-source/github/sticky-notes/node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/src/styles/index.less",
+                  "module": "./node_modules/_css-loader@0.28.11@css-loader??ref--7-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./node_modules/_postcss-loader@2.1.5@postcss-loader/lib!./src/styles/index.less",
+                  "moduleName": "./node_modules/_css-loader@0.28.11@css-loader??ref--7-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./node_modules/_postcss-loader@2.1.5@postcss-loader/lib!./src/styles/index.less",
+                  "type": "cjs require",
+                  "userRequest": "../../node_modules/_css-loader@0.28.11@css-loader/lib/css-base.js",
+                  "loc": "2:27-103"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module",
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1,
+              "source": "/*\n\tMIT License http://www.opensource.org/licenses/mit-license.php\n\tAuthor Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\nmodule.exports = function(useSourceMap) {\n\tvar list = [];\n\n\t// return the list of modules as css string\n\tlist.toString = function toString() {\n\t\treturn this.map(function (item) {\n\t\t\tvar content = cssWithMappingToString(item, useSourceMap);\n\t\t\tif(item[2]) {\n\t\t\t\treturn \"@media \" + item[2] + \"{\" + content + \"}\";\n\t\t\t} else {\n\t\t\t\treturn content;\n\t\t\t}\n\t\t}).join(\"\");\n\t};\n\n\t// import a list of modules into the list\n\tlist.i = function(modules, mediaQuery) {\n\t\tif(typeof modules === \"string\")\n\t\t\tmodules = [[null, modules, \"\"]];\n\t\tvar alreadyImportedModules = {};\n\t\tfor(var i = 0; i < this.length; i++) {\n\t\t\tvar id = this[i][0];\n\t\t\tif(typeof id === \"number\")\n\t\t\t\talreadyImportedModules[id] = true;\n\t\t}\n\t\tfor(i = 0; i < modules.length; i++) {\n\t\t\tvar item = modules[i];\n\t\t\t// skip already imported module\n\t\t\t// this implementation is not 100% perfect for weird media query combinations\n\t\t\t//  when a module is imported multiple times with different media queries.\n\t\t\t//  I hope this will never occur (Hey this way we have smaller bundles)\n\t\t\tif(typeof item[0] !== \"number\" || !alreadyImportedModules[item[0]]) {\n\t\t\t\tif(mediaQuery && !item[2]) {\n\t\t\t\t\titem[2] = mediaQuery;\n\t\t\t\t} else if(mediaQuery) {\n\t\t\t\t\titem[2] = \"(\" + item[2] + \") and (\" + mediaQuery + \")\";\n\t\t\t\t}\n\t\t\t\tlist.push(item);\n\t\t\t}\n\t\t}\n\t};\n\treturn list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n\tvar content = item[1] || '';\n\tvar cssMapping = item[3];\n\tif (!cssMapping) {\n\t\treturn content;\n\t}\n\n\tif (useSourceMap && typeof btoa === 'function') {\n\t\tvar sourceMapping = toComment(cssMapping);\n\t\tvar sourceURLs = cssMapping.sources.map(function (source) {\n\t\t\treturn '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'\n\t\t});\n\n\t\treturn [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n\t}\n\n\treturn [content].join('\\n');\n}\n\n// Adapted from convert-source-map (MIT)\nfunction toComment(sourceMap) {\n\t// eslint-disable-next-line no-undef\n\tvar base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n\tvar data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;\n\n\treturn '/*# ' + data + ' */';\n}\n"
             }
           ],
           "filteredModules": 0,
@@ -724,7 +704,7 @@
               "moduleIdentifier": "",
               "moduleName": "",
               "loc": "",
-              "request": "!!F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\index.js??ref--7-2!F:\\git-source\\github\\sticky-notes\\node_modules\\.4.1.0@less-loader\\dist\\cjs.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.1.5@postcss-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\src\\styles\\index.less",
+              "request": "!!/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/index.js??ref--7-2!/home/sunong/git-source/github/sticky-notes/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!/home/sunong/git-source/github/sticky-notes/node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/src/styles/index.less",
               "reasons": []
             }
           ]
@@ -732,68 +712,12 @@
       ],
       "modules": [
         {
-          "id": "3G5m",
-          "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\lib\\css-base.js",
-          "name": "./node_modules/.0.28.11@css-loader/lib/css-base.js",
-          "index": 2,
-          "index2": 1,
-          "size": 2260,
-          "cacheable": true,
-          "built": true,
-          "optional": false,
-          "prefetched": false,
-          "chunks": [
-            0
-          ],
-          "issuer": "F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\index.js??ref--7-2!F:\\git-source\\github\\sticky-notes\\node_modules\\.4.1.0@less-loader\\dist\\cjs.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.1.5@postcss-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\src\\styles\\index.less",
-          "issuerId": "FNcr",
-          "issuerName": "./node_modules/.0.28.11@css-loader??ref--7-2!./node_modules/.4.1.0@less-loader/dist/cjs.js!./node_modules/.2.1.5@postcss-loader/lib!./src/styles/index.less",
-          "issuerPath": [
-            {
-              "id": "FNcr",
-              "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\index.js??ref--7-2!F:\\git-source\\github\\sticky-notes\\node_modules\\.4.1.0@less-loader\\dist\\cjs.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.1.5@postcss-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\src\\styles\\index.less",
-              "name": "./node_modules/.0.28.11@css-loader??ref--7-2!./node_modules/.4.1.0@less-loader/dist/cjs.js!./node_modules/.2.1.5@postcss-loader/lib!./src/styles/index.less",
-              "profile": {
-                "factory": 10,
-                "building": 651
-              }
-            }
-          ],
-          "profile": {
-            "factory": 14,
-            "building": 6
-          },
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "assets": [],
-          "reasons": [
-            {
-              "moduleId": "FNcr",
-              "moduleIdentifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\index.js??ref--7-2!F:\\git-source\\github\\sticky-notes\\node_modules\\.4.1.0@less-loader\\dist\\cjs.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.1.5@postcss-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\src\\styles\\index.less",
-              "module": "./node_modules/.0.28.11@css-loader??ref--7-2!./node_modules/.4.1.0@less-loader/dist/cjs.js!./node_modules/.2.1.5@postcss-loader/lib!./src/styles/index.less",
-              "moduleName": "./node_modules/.0.28.11@css-loader??ref--7-2!./node_modules/.4.1.0@less-loader/dist/cjs.js!./node_modules/.2.1.5@postcss-loader/lib!./src/styles/index.less",
-              "type": "cjs require",
-              "userRequest": "../../node_modules/.0.28.11@css-loader/lib/css-base.js",
-              "loc": "2:27-92"
-            }
-          ],
-          "usedExports": true,
-          "providedExports": null,
-          "optimizationBailout": [
-            "ModuleConcatenation bailout: Module is not an ECMAScript module",
-            "ModuleConcatenation bailout: Module is not an ECMAScript module"
-          ],
-          "depth": 1,
-          "source": "/*\n\tMIT License http://www.opensource.org/licenses/mit-license.php\n\tAuthor Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\nmodule.exports = function(useSourceMap) {\n\tvar list = [];\n\n\t// return the list of modules as css string\n\tlist.toString = function toString() {\n\t\treturn this.map(function (item) {\n\t\t\tvar content = cssWithMappingToString(item, useSourceMap);\n\t\t\tif(item[2]) {\n\t\t\t\treturn \"@media \" + item[2] + \"{\" + content + \"}\";\n\t\t\t} else {\n\t\t\t\treturn content;\n\t\t\t}\n\t\t}).join(\"\");\n\t};\n\n\t// import a list of modules into the list\n\tlist.i = function(modules, mediaQuery) {\n\t\tif(typeof modules === \"string\")\n\t\t\tmodules = [[null, modules, \"\"]];\n\t\tvar alreadyImportedModules = {};\n\t\tfor(var i = 0; i < this.length; i++) {\n\t\t\tvar id = this[i][0];\n\t\t\tif(typeof id === \"number\")\n\t\t\t\talreadyImportedModules[id] = true;\n\t\t}\n\t\tfor(i = 0; i < modules.length; i++) {\n\t\t\tvar item = modules[i];\n\t\t\t// skip already imported module\n\t\t\t// this implementation is not 100% perfect for weird media query combinations\n\t\t\t//  when a module is imported multiple times with different media queries.\n\t\t\t//  I hope this will never occur (Hey this way we have smaller bundles)\n\t\t\tif(typeof item[0] !== \"number\" || !alreadyImportedModules[item[0]]) {\n\t\t\t\tif(mediaQuery && !item[2]) {\n\t\t\t\t\titem[2] = mediaQuery;\n\t\t\t\t} else if(mediaQuery) {\n\t\t\t\t\titem[2] = \"(\" + item[2] + \") and (\" + mediaQuery + \")\";\n\t\t\t\t}\n\t\t\t\tlist.push(item);\n\t\t\t}\n\t\t}\n\t};\n\treturn list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n\tvar content = item[1] || '';\n\tvar cssMapping = item[3];\n\tif (!cssMapping) {\n\t\treturn content;\n\t}\n\n\tif (useSourceMap && typeof btoa === 'function') {\n\t\tvar sourceMapping = toComment(cssMapping);\n\t\tvar sourceURLs = cssMapping.sources.map(function (source) {\n\t\t\treturn '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'\n\t\t});\n\n\t\treturn [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n\t}\n\n\treturn [content].join('\\n');\n}\n\n// Adapted from convert-source-map (MIT)\nfunction toComment(sourceMap) {\n\t// eslint-disable-next-line no-undef\n\tvar base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n\tvar data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;\n\n\treturn '/*# ' + data + ' */';\n}\n"
-        },
-        {
-          "id": "FNcr",
-          "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\index.js??ref--7-2!F:\\git-source\\github\\sticky-notes\\node_modules\\.4.1.0@less-loader\\dist\\cjs.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.1.5@postcss-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\src\\styles\\index.less",
-          "name": "./node_modules/.0.28.11@css-loader??ref--7-2!./node_modules/.4.1.0@less-loader/dist/cjs.js!./node_modules/.2.1.5@postcss-loader/lib!./src/styles/index.less",
+          "id": "/jlY",
+          "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/index.js??ref--7-2!/home/sunong/git-source/github/sticky-notes/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!/home/sunong/git-source/github/sticky-notes/node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/src/styles/index.less",
+          "name": "./node_modules/_css-loader@0.28.11@css-loader??ref--7-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./node_modules/_postcss-loader@2.1.5@postcss-loader/lib!./src/styles/index.less",
           "index": 0,
           "index2": 3,
-          "size": 1247,
+          "size": 1269,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -806,8 +730,8 @@
           "issuerName": null,
           "issuerPath": null,
           "profile": {
-            "factory": 10,
-            "building": 651
+            "factory": 2,
+            "building": 157
           },
           "failed": false,
           "errors": 0,
@@ -820,7 +744,7 @@
               "module": null,
               "moduleName": null,
               "type": "single entry",
-              "userRequest": "!!F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\index.js??ref--7-2!F:\\git-source\\github\\sticky-notes\\node_modules\\.4.1.0@less-loader\\dist\\cjs.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.1.5@postcss-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\src\\styles\\index.less"
+              "userRequest": "!!/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/index.js??ref--7-2!/home/sunong/git-source/github/sticky-notes/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!/home/sunong/git-source/github/sticky-notes/node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/src/styles/index.less"
             }
           ],
           "usedExports": true,
@@ -830,11 +754,11 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 0,
-          "source": "var escape = require(\"../../node_modules/.0.28.11@css-loader/lib/url/escape.js\");\nexports = module.exports = require(\"../../node_modules/.0.28.11@css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.id, \"*{margin:0;padding:0}body{font:14px/1.3 \\\\\\\\5FAE\\\\8F6F\\\\96C5\\\\9ED1;margin:20px}#create,#remove{margin:10px;width:100px;height:30px;line-height:30px;border:none;font-size:14px;background:#ccc;cursor:pointer;outline:none;border-radius:5px}#create:hover,#remove:hover{background:#e3e3e3}.m-note{position:absolute;left:20px;top:70px;width:200px;min-height:276px;max-height:452px;background-color:#c4e5ff;-webkit-box-shadow:0 5px 10px rgba(0,0,0,.5);box-shadow:0 5px 10px rgba(0,0,0,.5)}.m-note .u-edit{box-sizing:border-box;width:200px;min-height:250px;max-height:400px;padding:10px;outline:none;overflow-x:hidden;overflow-y:auto}.m-note:hover .u-close{display:block}.m-note .u-bar{height:26px;background:#0179d7;cursor:move}.m-note .u-close{width:30px;height:30px;position:absolute;left:-15px;top:-15px;background:url(\" + escape(require(\"../assets/img/btn-close.png\")) + \") no-repeat;display:none;cursor:pointer}.m-note .m-time{line-height:26px;height:26px;padding:0 10px;background-color:#c4e5ff}\", \"\"]);\n\n// exports\n"
+          "source": "var escape = require(\"../../node_modules/_css-loader@0.28.11@css-loader/lib/url/escape.js\");\nexports = module.exports = require(\"../../node_modules/_css-loader@0.28.11@css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.id, \"*{margin:0;padding:0}body{font:14px/1.3 \\\\\\\\5FAE\\\\8F6F\\\\96C5\\\\9ED1;margin:20px}#create,#remove{margin:10px;width:100px;height:30px;line-height:30px;border:none;font-size:14px;background:#ccc;cursor:pointer;outline:none;border-radius:5px}#create:hover,#remove:hover{background:#e3e3e3}.m-note{position:absolute;left:20px;top:70px;width:200px;min-height:276px;max-height:452px;background-color:#c4e5ff;-webkit-box-shadow:0 5px 10px rgba(0,0,0,.5);box-shadow:0 5px 10px rgba(0,0,0,.5)}.m-note .u-edit{box-sizing:border-box;width:200px;min-height:250px;max-height:400px;padding:10px;outline:none;overflow-x:hidden;overflow-y:auto}.m-note:hover .u-close{display:block}.m-note .u-bar{height:26px;background:#0179d7;cursor:move}.m-note .u-close{width:30px;height:30px;position:absolute;left:-15px;top:-15px;background:url(\" + escape(require(\"../assets/img/btn-close.png\")) + \") no-repeat;display:none;cursor:pointer}.m-note .m-time{line-height:26px;height:26px;padding:0 10px;background-color:#c4e5ff}\", \"\"]);\n\n// exports\n"
         },
         {
           "id": "ZuTw",
-          "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.1.0.1@url-loader\\dist\\cjs.js??ref--6-0!F:\\git-source\\github\\sticky-notes\\src\\assets\\img\\btn-close.png",
+          "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_url-loader@1.0.1@url-loader/dist/cjs.js??ref--6-0!/home/sunong/git-source/github/sticky-notes/src/assets/img/btn-close.png",
           "name": "./src/assets/img/btn-close.png",
           "index": 3,
           "index2": 2,
@@ -846,23 +770,23 @@
           "chunks": [
             0
           ],
-          "issuer": "F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\index.js??ref--7-2!F:\\git-source\\github\\sticky-notes\\node_modules\\.4.1.0@less-loader\\dist\\cjs.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.1.5@postcss-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\src\\styles\\index.less",
-          "issuerId": "FNcr",
-          "issuerName": "./node_modules/.0.28.11@css-loader??ref--7-2!./node_modules/.4.1.0@less-loader/dist/cjs.js!./node_modules/.2.1.5@postcss-loader/lib!./src/styles/index.less",
+          "issuer": "/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/index.js??ref--7-2!/home/sunong/git-source/github/sticky-notes/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!/home/sunong/git-source/github/sticky-notes/node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/src/styles/index.less",
+          "issuerId": "/jlY",
+          "issuerName": "./node_modules/_css-loader@0.28.11@css-loader??ref--7-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./node_modules/_postcss-loader@2.1.5@postcss-loader/lib!./src/styles/index.less",
           "issuerPath": [
             {
-              "id": "FNcr",
-              "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\index.js??ref--7-2!F:\\git-source\\github\\sticky-notes\\node_modules\\.4.1.0@less-loader\\dist\\cjs.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.1.5@postcss-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\src\\styles\\index.less",
-              "name": "./node_modules/.0.28.11@css-loader??ref--7-2!./node_modules/.4.1.0@less-loader/dist/cjs.js!./node_modules/.2.1.5@postcss-loader/lib!./src/styles/index.less",
+              "id": "/jlY",
+              "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/index.js??ref--7-2!/home/sunong/git-source/github/sticky-notes/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!/home/sunong/git-source/github/sticky-notes/node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/src/styles/index.less",
+              "name": "./node_modules/_css-loader@0.28.11@css-loader??ref--7-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./node_modules/_postcss-loader@2.1.5@postcss-loader/lib!./src/styles/index.less",
               "profile": {
-                "factory": 10,
-                "building": 651
+                "factory": 2,
+                "building": 157
               }
             }
           ],
           "profile": {
-            "factory": 14,
-            "building": 6
+            "factory": 2,
+            "building": 3
           },
           "failed": false,
           "errors": 0,
@@ -870,10 +794,10 @@
           "assets": [],
           "reasons": [
             {
-              "moduleId": "FNcr",
-              "moduleIdentifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\index.js??ref--7-2!F:\\git-source\\github\\sticky-notes\\node_modules\\.4.1.0@less-loader\\dist\\cjs.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.1.5@postcss-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\src\\styles\\index.less",
-              "module": "./node_modules/.0.28.11@css-loader??ref--7-2!./node_modules/.4.1.0@less-loader/dist/cjs.js!./node_modules/.2.1.5@postcss-loader/lib!./src/styles/index.less",
-              "moduleName": "./node_modules/.0.28.11@css-loader??ref--7-2!./node_modules/.4.1.0@less-loader/dist/cjs.js!./node_modules/.2.1.5@postcss-loader/lib!./src/styles/index.less",
+              "moduleId": "/jlY",
+              "moduleIdentifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/index.js??ref--7-2!/home/sunong/git-source/github/sticky-notes/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!/home/sunong/git-source/github/sticky-notes/node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/src/styles/index.less",
+              "module": "./node_modules/_css-loader@0.28.11@css-loader??ref--7-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./node_modules/_postcss-loader@2.1.5@postcss-loader/lib!./src/styles/index.less",
+              "moduleName": "./node_modules/_css-loader@0.28.11@css-loader??ref--7-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./node_modules/_postcss-loader@2.1.5@postcss-loader/lib!./src/styles/index.less",
               "type": "cjs require",
               "userRequest": "../assets/img/btn-close.png",
               "loc": "7:852-890"
@@ -889,9 +813,9 @@
           "source": "module.exports = \"data:image/png;base64,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\""
         },
         {
-          "id": "cLE4",
-          "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\lib\\url\\escape.js",
-          "name": "./node_modules/.0.28.11@css-loader/lib/url/escape.js",
+          "id": "iTuz",
+          "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/lib/url/escape.js",
+          "name": "./node_modules/_css-loader@0.28.11@css-loader/lib/url/escape.js",
           "index": 1,
           "index2": 0,
           "size": 448,
@@ -902,23 +826,23 @@
           "chunks": [
             0
           ],
-          "issuer": "F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\index.js??ref--7-2!F:\\git-source\\github\\sticky-notes\\node_modules\\.4.1.0@less-loader\\dist\\cjs.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.1.5@postcss-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\src\\styles\\index.less",
-          "issuerId": "FNcr",
-          "issuerName": "./node_modules/.0.28.11@css-loader??ref--7-2!./node_modules/.4.1.0@less-loader/dist/cjs.js!./node_modules/.2.1.5@postcss-loader/lib!./src/styles/index.less",
+          "issuer": "/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/index.js??ref--7-2!/home/sunong/git-source/github/sticky-notes/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!/home/sunong/git-source/github/sticky-notes/node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/src/styles/index.less",
+          "issuerId": "/jlY",
+          "issuerName": "./node_modules/_css-loader@0.28.11@css-loader??ref--7-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./node_modules/_postcss-loader@2.1.5@postcss-loader/lib!./src/styles/index.less",
           "issuerPath": [
             {
-              "id": "FNcr",
-              "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\index.js??ref--7-2!F:\\git-source\\github\\sticky-notes\\node_modules\\.4.1.0@less-loader\\dist\\cjs.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.1.5@postcss-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\src\\styles\\index.less",
-              "name": "./node_modules/.0.28.11@css-loader??ref--7-2!./node_modules/.4.1.0@less-loader/dist/cjs.js!./node_modules/.2.1.5@postcss-loader/lib!./src/styles/index.less",
+              "id": "/jlY",
+              "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/index.js??ref--7-2!/home/sunong/git-source/github/sticky-notes/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!/home/sunong/git-source/github/sticky-notes/node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/src/styles/index.less",
+              "name": "./node_modules/_css-loader@0.28.11@css-loader??ref--7-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./node_modules/_postcss-loader@2.1.5@postcss-loader/lib!./src/styles/index.less",
               "profile": {
-                "factory": 10,
-                "building": 651
+                "factory": 2,
+                "building": 157
               }
             }
           ],
           "profile": {
-            "factory": 14,
-            "building": 6
+            "factory": 2,
+            "building": 3
           },
           "failed": false,
           "errors": 0,
@@ -926,13 +850,13 @@
           "assets": [],
           "reasons": [
             {
-              "moduleId": "FNcr",
-              "moduleIdentifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.0.28.11@css-loader\\index.js??ref--7-2!F:\\git-source\\github\\sticky-notes\\node_modules\\.4.1.0@less-loader\\dist\\cjs.js!F:\\git-source\\github\\sticky-notes\\node_modules\\.2.1.5@postcss-loader\\lib\\index.js!F:\\git-source\\github\\sticky-notes\\src\\styles\\index.less",
-              "module": "./node_modules/.0.28.11@css-loader??ref--7-2!./node_modules/.4.1.0@less-loader/dist/cjs.js!./node_modules/.2.1.5@postcss-loader/lib!./src/styles/index.less",
-              "moduleName": "./node_modules/.0.28.11@css-loader??ref--7-2!./node_modules/.4.1.0@less-loader/dist/cjs.js!./node_modules/.2.1.5@postcss-loader/lib!./src/styles/index.less",
+              "moduleId": "/jlY",
+              "moduleIdentifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/index.js??ref--7-2!/home/sunong/git-source/github/sticky-notes/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!/home/sunong/git-source/github/sticky-notes/node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/src/styles/index.less",
+              "module": "./node_modules/_css-loader@0.28.11@css-loader??ref--7-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./node_modules/_postcss-loader@2.1.5@postcss-loader/lib!./src/styles/index.less",
+              "moduleName": "./node_modules/_css-loader@0.28.11@css-loader??ref--7-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./node_modules/_postcss-loader@2.1.5@postcss-loader/lib!./src/styles/index.less",
               "type": "cjs require",
-              "userRequest": "../../node_modules/.0.28.11@css-loader/lib/url/escape.js",
-              "loc": "1:13-80"
+              "userRequest": "../../node_modules/_css-loader@0.28.11@css-loader/lib/url/escape.js",
+              "loc": "1:13-91"
             }
           ],
           "usedExports": true,
@@ -943,22 +867,78 @@
           ],
           "depth": 1,
           "source": "module.exports = function escape(url) {\n    if (typeof url !== 'string') {\n        return url\n    }\n    // If url is already wrapped in quotes, remove them\n    if (/^['\"].*['\"]$/.test(url)) {\n        url = url.slice(1, -1);\n    }\n    // Should url be wrapped?\n    // See https://drafts.csswg.org/css-values-3/#urls\n    if (/[\"'() \\t\\n]/.test(url)) {\n        return '\"' + url.replace(/\"/g, '\\\\\"').replace(/\\n/g, '\\\\n') + '\"'\n    }\n\n    return url\n}\n"
+        },
+        {
+          "id": "lbwJ",
+          "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/lib/css-base.js",
+          "name": "./node_modules/_css-loader@0.28.11@css-loader/lib/css-base.js",
+          "index": 2,
+          "index2": 1,
+          "size": 2260,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/index.js??ref--7-2!/home/sunong/git-source/github/sticky-notes/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!/home/sunong/git-source/github/sticky-notes/node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/src/styles/index.less",
+          "issuerId": "/jlY",
+          "issuerName": "./node_modules/_css-loader@0.28.11@css-loader??ref--7-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./node_modules/_postcss-loader@2.1.5@postcss-loader/lib!./src/styles/index.less",
+          "issuerPath": [
+            {
+              "id": "/jlY",
+              "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/index.js??ref--7-2!/home/sunong/git-source/github/sticky-notes/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!/home/sunong/git-source/github/sticky-notes/node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/src/styles/index.less",
+              "name": "./node_modules/_css-loader@0.28.11@css-loader??ref--7-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./node_modules/_postcss-loader@2.1.5@postcss-loader/lib!./src/styles/index.less",
+              "profile": {
+                "factory": 2,
+                "building": 157
+              }
+            }
+          ],
+          "profile": {
+            "factory": 2,
+            "building": 3
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "/jlY",
+              "moduleIdentifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_css-loader@0.28.11@css-loader/index.js??ref--7-2!/home/sunong/git-source/github/sticky-notes/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!/home/sunong/git-source/github/sticky-notes/node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!/home/sunong/git-source/github/sticky-notes/src/styles/index.less",
+              "module": "./node_modules/_css-loader@0.28.11@css-loader??ref--7-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./node_modules/_postcss-loader@2.1.5@postcss-loader/lib!./src/styles/index.less",
+              "moduleName": "./node_modules/_css-loader@0.28.11@css-loader??ref--7-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./node_modules/_postcss-loader@2.1.5@postcss-loader/lib!./src/styles/index.less",
+              "type": "cjs require",
+              "userRequest": "../../node_modules/_css-loader@0.28.11@css-loader/lib/css-base.js",
+              "loc": "2:27-103"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module",
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source": "/*\n\tMIT License http://www.opensource.org/licenses/mit-license.php\n\tAuthor Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\nmodule.exports = function(useSourceMap) {\n\tvar list = [];\n\n\t// return the list of modules as css string\n\tlist.toString = function toString() {\n\t\treturn this.map(function (item) {\n\t\t\tvar content = cssWithMappingToString(item, useSourceMap);\n\t\t\tif(item[2]) {\n\t\t\t\treturn \"@media \" + item[2] + \"{\" + content + \"}\";\n\t\t\t} else {\n\t\t\t\treturn content;\n\t\t\t}\n\t\t}).join(\"\");\n\t};\n\n\t// import a list of modules into the list\n\tlist.i = function(modules, mediaQuery) {\n\t\tif(typeof modules === \"string\")\n\t\t\tmodules = [[null, modules, \"\"]];\n\t\tvar alreadyImportedModules = {};\n\t\tfor(var i = 0; i < this.length; i++) {\n\t\t\tvar id = this[i][0];\n\t\t\tif(typeof id === \"number\")\n\t\t\t\talreadyImportedModules[id] = true;\n\t\t}\n\t\tfor(i = 0; i < modules.length; i++) {\n\t\t\tvar item = modules[i];\n\t\t\t// skip already imported module\n\t\t\t// this implementation is not 100% perfect for weird media query combinations\n\t\t\t//  when a module is imported multiple times with different media queries.\n\t\t\t//  I hope this will never occur (Hey this way we have smaller bundles)\n\t\t\tif(typeof item[0] !== \"number\" || !alreadyImportedModules[item[0]]) {\n\t\t\t\tif(mediaQuery && !item[2]) {\n\t\t\t\t\titem[2] = mediaQuery;\n\t\t\t\t} else if(mediaQuery) {\n\t\t\t\t\titem[2] = \"(\" + item[2] + \") and (\" + mediaQuery + \")\";\n\t\t\t\t}\n\t\t\t\tlist.push(item);\n\t\t\t}\n\t\t}\n\t};\n\treturn list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n\tvar content = item[1] || '';\n\tvar cssMapping = item[3];\n\tif (!cssMapping) {\n\t\treturn content;\n\t}\n\n\tif (useSourceMap && typeof btoa === 'function') {\n\t\tvar sourceMapping = toComment(cssMapping);\n\t\tvar sourceURLs = cssMapping.sources.map(function (source) {\n\t\t\treturn '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'\n\t\t});\n\n\t\treturn [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n\t}\n\n\treturn [content].join('\\n');\n}\n\n// Adapted from convert-source-map (MIT)\nfunction toComment(sourceMap) {\n\t// eslint-disable-next-line no-undef\n\tvar base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n\tvar data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;\n\n\treturn '/*# ' + data + ' */';\n}\n"
         }
       ],
       "filteredModules": 0,
       "children": [],
-      "name": "extract-text-webpack-plugin node_modules/.4.0.0-beta.0@extract-text-webpack-plugin/dist node_modules/.0.28.11@css-loader/index.js??ref--7-2!node_modules/.4.1.0@less-loader/dist/cjs.js!node_modules/.2.1.5@postcss-loader/lib/index.js!src/styles/index.less"
+      "name": "extract-text-webpack-plugin node_modules/_extract-text-webpack-plugin@4.0.0-beta.0@extract-text-webpack-plugin/dist node_modules/_css-loader@0.28.11@css-loader/index.js??ref--7-2!node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!node_modules/_postcss-loader@2.1.5@postcss-loader/lib/index.js!src/styles/index.less"
     },
     {
       "errors": [],
       "warnings": [],
       "publicPath": "./",
-      "outputPath": "F:\\git-source\\github\\sticky-notes\\dist",
+      "outputPath": "/home/sunong/git-source/github/sticky-notes/dist",
       "assetsByChunkName": {},
       "assets": [
         {
           "name": "index.html",
-          "size": 545872,
+          "size": 545806,
           "chunks": [
             0
           ],
@@ -996,20 +976,20 @@
           "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 541859,
+          "size": 541800,
           "names": [],
           "files": [
             "index.html"
           ],
-          "hash": "87dabe6b8819c4e99166",
+          "hash": "b1c9329c256ba17cb4f6",
           "siblings": [],
           "parents": [],
           "children": [],
           "childrenByOrder": {},
           "modules": [
             {
-              "id": "14Hr",
-              "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.4.10.2@webpack\\buildin\\global.js",
+              "id": "7OE9",
+              "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_webpack@4.10.2@webpack/buildin/global.js",
               "name": "(webpack)/buildin/global.js",
               "index": 2,
               "index2": 0,
@@ -1021,32 +1001,32 @@
               "chunks": [
                 0
               ],
-              "issuer": "F:\\git-source\\github\\sticky-notes\\node_modules\\.4.17.10@lodash\\lodash.js",
-              "issuerId": "qGCc",
-              "issuerName": "./node_modules/.4.17.10@lodash/lodash.js",
+              "issuer": "/home/sunong/git-source/github/sticky-notes/node_modules/_lodash@4.17.10@lodash/lodash.js",
+              "issuerId": "nQuZ",
+              "issuerName": "./node_modules/_lodash@4.17.10@lodash/lodash.js",
               "issuerPath": [
                 {
-                  "id": "J4lA",
-                  "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.3.2.0@html-webpack-plugin\\lib\\loader.js!F:\\git-source\\github\\sticky-notes\\src\\index.html",
-                  "name": "./node_modules/.3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
+                  "id": "Y0Zr",
+                  "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!/home/sunong/git-source/github/sticky-notes/src/index.html",
+                  "name": "./node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
                   "profile": {
-                    "factory": 80,
-                    "building": 50
+                    "factory": 64,
+                    "building": 17
                   }
                 },
                 {
-                  "id": "qGCc",
-                  "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.4.17.10@lodash\\lodash.js",
-                  "name": "./node_modules/.4.17.10@lodash/lodash.js",
+                  "id": "nQuZ",
+                  "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_lodash@4.17.10@lodash/lodash.js",
+                  "name": "./node_modules/_lodash@4.17.10@lodash/lodash.js",
                   "profile": {
-                    "factory": 10,
-                    "building": 400
+                    "factory": 2,
+                    "building": 149
                   }
                 }
               ],
               "profile": {
-                "factory": 0,
-                "building": 780
+                "factory": 777,
+                "building": 3
               },
               "failed": false,
               "errors": 0,
@@ -1054,13 +1034,13 @@
               "assets": [],
               "reasons": [
                 {
-                  "moduleId": "qGCc",
-                  "moduleIdentifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.4.17.10@lodash\\lodash.js",
-                  "module": "./node_modules/.4.17.10@lodash/lodash.js",
-                  "moduleName": "./node_modules/.4.17.10@lodash/lodash.js",
+                  "moduleId": "nQuZ",
+                  "moduleIdentifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_lodash@4.17.10@lodash/lodash.js",
+                  "module": "./node_modules/_lodash@4.17.10@lodash/lodash.js",
+                  "moduleName": "./node_modules/_lodash@4.17.10@lodash/lodash.js",
                   "type": "cjs require",
                   "userRequest": "global",
-                  "loc": "1:0-49"
+                  "loc": "1:0-57"
                 }
               ],
               "usedExports": true,
@@ -1073,8 +1053,8 @@
               "source": "var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn this;\n})();\n\ntry {\n\t// This works if eval is allowed (see CSP)\n\tg = g || Function(\"return this\")() || (1, eval)(\"this\");\n} catch (e) {\n\t// This works if the window reference is available\n\tif (typeof window === \"object\") g = window;\n}\n\n// g can still be undefined, but nothing to do about it...\n// We return undefined, instead of nothing here, so it's\n// easier to handle this case. if(!global) { ...}\n\nmodule.exports = g;\n"
             },
             {
-              "id": "7bUJ",
-              "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.4.10.2@webpack\\buildin\\module.js",
+              "id": "Jw0K",
+              "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_webpack@4.10.2@webpack/buildin/module.js",
               "name": "(webpack)/buildin/module.js",
               "index": 3,
               "index2": 1,
@@ -1086,32 +1066,32 @@
               "chunks": [
                 0
               ],
-              "issuer": "F:\\git-source\\github\\sticky-notes\\node_modules\\.4.17.10@lodash\\lodash.js",
-              "issuerId": "qGCc",
-              "issuerName": "./node_modules/.4.17.10@lodash/lodash.js",
+              "issuer": "/home/sunong/git-source/github/sticky-notes/node_modules/_lodash@4.17.10@lodash/lodash.js",
+              "issuerId": "nQuZ",
+              "issuerName": "./node_modules/_lodash@4.17.10@lodash/lodash.js",
               "issuerPath": [
                 {
-                  "id": "J4lA",
-                  "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.3.2.0@html-webpack-plugin\\lib\\loader.js!F:\\git-source\\github\\sticky-notes\\src\\index.html",
-                  "name": "./node_modules/.3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
+                  "id": "Y0Zr",
+                  "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!/home/sunong/git-source/github/sticky-notes/src/index.html",
+                  "name": "./node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
                   "profile": {
-                    "factory": 80,
-                    "building": 50
+                    "factory": 64,
+                    "building": 17
                   }
                 },
                 {
-                  "id": "qGCc",
-                  "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.4.17.10@lodash\\lodash.js",
-                  "name": "./node_modules/.4.17.10@lodash/lodash.js",
+                  "id": "nQuZ",
+                  "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_lodash@4.17.10@lodash/lodash.js",
+                  "name": "./node_modules/_lodash@4.17.10@lodash/lodash.js",
                   "profile": {
-                    "factory": 10,
-                    "building": 400
+                    "factory": 2,
+                    "building": 149
                   }
                 }
               ],
               "profile": {
-                "factory": 0,
-                "building": 780
+                "factory": 777,
+                "building": 3
               },
               "failed": false,
               "errors": 0,
@@ -1119,13 +1099,13 @@
               "assets": [],
               "reasons": [
                 {
-                  "moduleId": "qGCc",
-                  "moduleIdentifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.4.17.10@lodash\\lodash.js",
-                  "module": "./node_modules/.4.17.10@lodash/lodash.js",
-                  "moduleName": "./node_modules/.4.17.10@lodash/lodash.js",
+                  "moduleId": "nQuZ",
+                  "moduleIdentifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_lodash@4.17.10@lodash/lodash.js",
+                  "module": "./node_modules/_lodash@4.17.10@lodash/lodash.js",
+                  "moduleName": "./node_modules/_lodash@4.17.10@lodash/lodash.js",
                   "type": "cjs require",
                   "userRequest": "module",
-                  "loc": "1:0-49"
+                  "loc": "1:0-57"
                 }
               ],
               "usedExports": true,
@@ -1138,12 +1118,12 @@
               "source": "module.exports = function(module) {\n\tif (!module.webpackPolyfill) {\n\t\tmodule.deprecate = function() {};\n\t\tmodule.paths = [];\n\t\t// module.parent = undefined by default\n\t\tif (!module.children) module.children = [];\n\t\tObject.defineProperty(module, \"loaded\", {\n\t\t\tenumerable: true,\n\t\t\tget: function() {\n\t\t\t\treturn module.l;\n\t\t\t}\n\t\t});\n\t\tObject.defineProperty(module, \"id\", {\n\t\t\tenumerable: true,\n\t\t\tget: function() {\n\t\t\t\treturn module.i;\n\t\t\t}\n\t\t});\n\t\tmodule.webpackPolyfill = 1;\n\t}\n\treturn module;\n};\n"
             },
             {
-              "id": "J4lA",
-              "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.3.2.0@html-webpack-plugin\\lib\\loader.js!F:\\git-source\\github\\sticky-notes\\src\\index.html",
-              "name": "./node_modules/.3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
+              "id": "Y0Zr",
+              "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!/home/sunong/git-source/github/sticky-notes/src/index.html",
+              "name": "./node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
               "index": 0,
               "index2": 3,
-              "size": 1037,
+              "size": 978,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -1156,8 +1136,8 @@
               "issuerName": null,
               "issuerPath": null,
               "profile": {
-                "factory": 80,
-                "building": 50
+                "factory": 64,
+                "building": 17
               },
               "failed": false,
               "errors": 0,
@@ -1170,7 +1150,7 @@
                   "module": null,
                   "moduleName": null,
                   "type": "single entry",
-                  "userRequest": "F:\\git-source\\github\\sticky-notes\\node_modules\\.3.2.0@html-webpack-plugin\\lib\\loader.js!F:\\git-source\\github\\sticky-notes\\src\\index.html"
+                  "userRequest": "/home/sunong/git-source/github/sticky-notes/node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!/home/sunong/git-source/github/sticky-notes/src/index.html"
                 }
               ],
               "usedExports": true,
@@ -1180,12 +1160,12 @@
                 "ModuleConcatenation bailout: Module is not an ECMAScript module"
               ],
               "depth": 0,
-              "source": "var _ = require(\"!!../node_modules/.4.17.10@lodash/lodash.js\");module.exports = function (templateParams) { with(templateParams) {return (function(data) {\nvar __t, __p = '';\n__p += '<!DOCTYPE html>\\r\\n<html lang=\"en\">\\r\\n<head>\\r\\n    <meta charset=\"UTF-8\">\\r\\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\\r\\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\\r\\n    <title>便签</title>\\r\\n    <link rel=\"shortcut icon\" href=\"favicon.ico\">\\r\\n</head>\\r\\n<body>\\r\\n    <button id=\"create\">创建便签</button>\\r\\n    <button id=\"remove\">清除所有便签</button>\\r\\n    <code>\\r\\n        <pre>\\r\\n        主要功能点：\\r\\n\\r\\n        - [x] 1、创建、删除、移动、删除便签\\r\\n\\r\\n        - [x] 2、保存到`localstorage`\\r\\n\\r\\n        - [x] 3、清除所有便签\\r\\n\\r\\n        - [x] 4、拖拽范围限制在可视区\\r\\n\\r\\n        - [x] 5、改用webpack 4构建\\r\\n\\r\\n        - [x] 6、加入less、eslint、babel等\\r\\n\\r\\n        - [x] 7、加入husky依赖，precommit 钩子校验\\r\\n        </pre>\\r\\n    </code>\\r\\n    <!-- 2018-05-12 21:56:30 luoxiaochuan 注释，验证是否会去除注释 -->\\r\\n</body>\\r\\n</html>';\nreturn __p\n})();}}"
+              "source": "var _ = require(\"!!../node_modules/_lodash@4.17.10@lodash/lodash.js\");module.exports = function (templateParams) { with(templateParams) {return (function(data) {\nvar __t, __p = '';\n__p += '<!DOCTYPE html>\\n<html lang=\"en\">\\n<head>\\n    <meta charset=\"UTF-8\">\\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\\n    <title>便签</title>\\n    <link rel=\"shortcut icon\" href=\"favicon.ico\">\\n</head>\\n<body>\\n    <button id=\"create\">创建便签</button>\\n    <button id=\"remove\">清除所有便签</button>\\n    <code>\\n        <pre>\\n        主要功能点：\\n\\n        - [x] 1、创建、删除、移动、删除便签\\n\\n        - [x] 2、保存到`localstorage`\\n\\n        - [x] 3、清除所有便签\\n\\n        - [x] 4、拖拽范围限制在可视区\\n\\n        - [x] 5、改用webpack 4构建\\n\\n        - [x] 6、加入less、eslint、babel等\\n\\n        - [x] 7、加入husky依赖，precommit 钩子校验\\n        </pre>\\n    </code>\\n    <!-- 2018-05-12 21:56:30 luoxiaochuan 注释，验证是否会去除注释 -->\\n</body>\\n</html>';\nreturn __p\n})();}}"
             },
             {
-              "id": "qGCc",
-              "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.4.17.10@lodash\\lodash.js",
-              "name": "./node_modules/.4.17.10@lodash/lodash.js",
+              "id": "nQuZ",
+              "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_lodash@4.17.10@lodash/lodash.js",
+              "name": "./node_modules/_lodash@4.17.10@lodash/lodash.js",
               "index": 1,
               "index2": 2,
               "size": 539836,
@@ -1196,23 +1176,23 @@
               "chunks": [
                 0
               ],
-              "issuer": "F:\\git-source\\github\\sticky-notes\\node_modules\\.3.2.0@html-webpack-plugin\\lib\\loader.js!F:\\git-source\\github\\sticky-notes\\src\\index.html",
-              "issuerId": "J4lA",
-              "issuerName": "./node_modules/.3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
+              "issuer": "/home/sunong/git-source/github/sticky-notes/node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!/home/sunong/git-source/github/sticky-notes/src/index.html",
+              "issuerId": "Y0Zr",
+              "issuerName": "./node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
               "issuerPath": [
                 {
-                  "id": "J4lA",
-                  "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.3.2.0@html-webpack-plugin\\lib\\loader.js!F:\\git-source\\github\\sticky-notes\\src\\index.html",
-                  "name": "./node_modules/.3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
+                  "id": "Y0Zr",
+                  "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!/home/sunong/git-source/github/sticky-notes/src/index.html",
+                  "name": "./node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
                   "profile": {
-                    "factory": 80,
-                    "building": 50
+                    "factory": 64,
+                    "building": 17
                   }
                 }
               ],
               "profile": {
-                "factory": 10,
-                "building": 400
+                "factory": 2,
+                "building": 149
               },
               "failed": false,
               "errors": 0,
@@ -1220,13 +1200,13 @@
               "assets": [],
               "reasons": [
                 {
-                  "moduleId": "J4lA",
-                  "moduleIdentifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.3.2.0@html-webpack-plugin\\lib\\loader.js!F:\\git-source\\github\\sticky-notes\\src\\index.html",
-                  "module": "./node_modules/.3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
-                  "moduleName": "./node_modules/.3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
+                  "moduleId": "Y0Zr",
+                  "moduleIdentifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!/home/sunong/git-source/github/sticky-notes/src/index.html",
+                  "module": "./node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
+                  "moduleName": "./node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
                   "type": "cjs require",
-                  "userRequest": "!!../node_modules/.4.17.10@lodash/lodash.js",
-                  "loc": "1:8-62"
+                  "userRequest": "!!../node_modules/_lodash@4.17.10@lodash/lodash.js",
+                  "loc": "1:8-69"
                 }
               ],
               "usedExports": true,
@@ -1246,7 +1226,7 @@
               "moduleIdentifier": "",
               "moduleName": "",
               "loc": "",
-              "request": "F:\\git-source\\github\\sticky-notes\\node_modules\\.3.2.0@html-webpack-plugin\\lib\\loader.js!F:\\git-source\\github\\sticky-notes\\src\\index.html",
+              "request": "/home/sunong/git-source/github/sticky-notes/node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!/home/sunong/git-source/github/sticky-notes/src/index.html",
               "reasons": []
             }
           ]
@@ -1254,8 +1234,8 @@
       ],
       "modules": [
         {
-          "id": "14Hr",
-          "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.4.10.2@webpack\\buildin\\global.js",
+          "id": "7OE9",
+          "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_webpack@4.10.2@webpack/buildin/global.js",
           "name": "(webpack)/buildin/global.js",
           "index": 2,
           "index2": 0,
@@ -1267,32 +1247,32 @@
           "chunks": [
             0
           ],
-          "issuer": "F:\\git-source\\github\\sticky-notes\\node_modules\\.4.17.10@lodash\\lodash.js",
-          "issuerId": "qGCc",
-          "issuerName": "./node_modules/.4.17.10@lodash/lodash.js",
+          "issuer": "/home/sunong/git-source/github/sticky-notes/node_modules/_lodash@4.17.10@lodash/lodash.js",
+          "issuerId": "nQuZ",
+          "issuerName": "./node_modules/_lodash@4.17.10@lodash/lodash.js",
           "issuerPath": [
             {
-              "id": "J4lA",
-              "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.3.2.0@html-webpack-plugin\\lib\\loader.js!F:\\git-source\\github\\sticky-notes\\src\\index.html",
-              "name": "./node_modules/.3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
+              "id": "Y0Zr",
+              "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!/home/sunong/git-source/github/sticky-notes/src/index.html",
+              "name": "./node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
               "profile": {
-                "factory": 80,
-                "building": 50
+                "factory": 64,
+                "building": 17
               }
             },
             {
-              "id": "qGCc",
-              "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.4.17.10@lodash\\lodash.js",
-              "name": "./node_modules/.4.17.10@lodash/lodash.js",
+              "id": "nQuZ",
+              "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_lodash@4.17.10@lodash/lodash.js",
+              "name": "./node_modules/_lodash@4.17.10@lodash/lodash.js",
               "profile": {
-                "factory": 10,
-                "building": 400
+                "factory": 2,
+                "building": 149
               }
             }
           ],
           "profile": {
-            "factory": 0,
-            "building": 780
+            "factory": 777,
+            "building": 3
           },
           "failed": false,
           "errors": 0,
@@ -1300,13 +1280,13 @@
           "assets": [],
           "reasons": [
             {
-              "moduleId": "qGCc",
-              "moduleIdentifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.4.17.10@lodash\\lodash.js",
-              "module": "./node_modules/.4.17.10@lodash/lodash.js",
-              "moduleName": "./node_modules/.4.17.10@lodash/lodash.js",
+              "moduleId": "nQuZ",
+              "moduleIdentifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_lodash@4.17.10@lodash/lodash.js",
+              "module": "./node_modules/_lodash@4.17.10@lodash/lodash.js",
+              "moduleName": "./node_modules/_lodash@4.17.10@lodash/lodash.js",
               "type": "cjs require",
               "userRequest": "global",
-              "loc": "1:0-49"
+              "loc": "1:0-57"
             }
           ],
           "usedExports": true,
@@ -1319,8 +1299,8 @@
           "source": "var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn this;\n})();\n\ntry {\n\t// This works if eval is allowed (see CSP)\n\tg = g || Function(\"return this\")() || (1, eval)(\"this\");\n} catch (e) {\n\t// This works if the window reference is available\n\tif (typeof window === \"object\") g = window;\n}\n\n// g can still be undefined, but nothing to do about it...\n// We return undefined, instead of nothing here, so it's\n// easier to handle this case. if(!global) { ...}\n\nmodule.exports = g;\n"
         },
         {
-          "id": "7bUJ",
-          "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.4.10.2@webpack\\buildin\\module.js",
+          "id": "Jw0K",
+          "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_webpack@4.10.2@webpack/buildin/module.js",
           "name": "(webpack)/buildin/module.js",
           "index": 3,
           "index2": 1,
@@ -1332,32 +1312,32 @@
           "chunks": [
             0
           ],
-          "issuer": "F:\\git-source\\github\\sticky-notes\\node_modules\\.4.17.10@lodash\\lodash.js",
-          "issuerId": "qGCc",
-          "issuerName": "./node_modules/.4.17.10@lodash/lodash.js",
+          "issuer": "/home/sunong/git-source/github/sticky-notes/node_modules/_lodash@4.17.10@lodash/lodash.js",
+          "issuerId": "nQuZ",
+          "issuerName": "./node_modules/_lodash@4.17.10@lodash/lodash.js",
           "issuerPath": [
             {
-              "id": "J4lA",
-              "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.3.2.0@html-webpack-plugin\\lib\\loader.js!F:\\git-source\\github\\sticky-notes\\src\\index.html",
-              "name": "./node_modules/.3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
+              "id": "Y0Zr",
+              "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!/home/sunong/git-source/github/sticky-notes/src/index.html",
+              "name": "./node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
               "profile": {
-                "factory": 80,
-                "building": 50
+                "factory": 64,
+                "building": 17
               }
             },
             {
-              "id": "qGCc",
-              "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.4.17.10@lodash\\lodash.js",
-              "name": "./node_modules/.4.17.10@lodash/lodash.js",
+              "id": "nQuZ",
+              "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_lodash@4.17.10@lodash/lodash.js",
+              "name": "./node_modules/_lodash@4.17.10@lodash/lodash.js",
               "profile": {
-                "factory": 10,
-                "building": 400
+                "factory": 2,
+                "building": 149
               }
             }
           ],
           "profile": {
-            "factory": 0,
-            "building": 780
+            "factory": 777,
+            "building": 3
           },
           "failed": false,
           "errors": 0,
@@ -1365,13 +1345,13 @@
           "assets": [],
           "reasons": [
             {
-              "moduleId": "qGCc",
-              "moduleIdentifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.4.17.10@lodash\\lodash.js",
-              "module": "./node_modules/.4.17.10@lodash/lodash.js",
-              "moduleName": "./node_modules/.4.17.10@lodash/lodash.js",
+              "moduleId": "nQuZ",
+              "moduleIdentifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_lodash@4.17.10@lodash/lodash.js",
+              "module": "./node_modules/_lodash@4.17.10@lodash/lodash.js",
+              "moduleName": "./node_modules/_lodash@4.17.10@lodash/lodash.js",
               "type": "cjs require",
               "userRequest": "module",
-              "loc": "1:0-49"
+              "loc": "1:0-57"
             }
           ],
           "usedExports": true,
@@ -1384,12 +1364,12 @@
           "source": "module.exports = function(module) {\n\tif (!module.webpackPolyfill) {\n\t\tmodule.deprecate = function() {};\n\t\tmodule.paths = [];\n\t\t// module.parent = undefined by default\n\t\tif (!module.children) module.children = [];\n\t\tObject.defineProperty(module, \"loaded\", {\n\t\t\tenumerable: true,\n\t\t\tget: function() {\n\t\t\t\treturn module.l;\n\t\t\t}\n\t\t});\n\t\tObject.defineProperty(module, \"id\", {\n\t\t\tenumerable: true,\n\t\t\tget: function() {\n\t\t\t\treturn module.i;\n\t\t\t}\n\t\t});\n\t\tmodule.webpackPolyfill = 1;\n\t}\n\treturn module;\n};\n"
         },
         {
-          "id": "J4lA",
-          "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.3.2.0@html-webpack-plugin\\lib\\loader.js!F:\\git-source\\github\\sticky-notes\\src\\index.html",
-          "name": "./node_modules/.3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
+          "id": "Y0Zr",
+          "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!/home/sunong/git-source/github/sticky-notes/src/index.html",
+          "name": "./node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
           "index": 0,
           "index2": 3,
-          "size": 1037,
+          "size": 978,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -1402,8 +1382,8 @@
           "issuerName": null,
           "issuerPath": null,
           "profile": {
-            "factory": 80,
-            "building": 50
+            "factory": 64,
+            "building": 17
           },
           "failed": false,
           "errors": 0,
@@ -1416,7 +1396,7 @@
               "module": null,
               "moduleName": null,
               "type": "single entry",
-              "userRequest": "F:\\git-source\\github\\sticky-notes\\node_modules\\.3.2.0@html-webpack-plugin\\lib\\loader.js!F:\\git-source\\github\\sticky-notes\\src\\index.html"
+              "userRequest": "/home/sunong/git-source/github/sticky-notes/node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!/home/sunong/git-source/github/sticky-notes/src/index.html"
             }
           ],
           "usedExports": true,
@@ -1426,12 +1406,12 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 0,
-          "source": "var _ = require(\"!!../node_modules/.4.17.10@lodash/lodash.js\");module.exports = function (templateParams) { with(templateParams) {return (function(data) {\nvar __t, __p = '';\n__p += '<!DOCTYPE html>\\r\\n<html lang=\"en\">\\r\\n<head>\\r\\n    <meta charset=\"UTF-8\">\\r\\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\\r\\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\\r\\n    <title>便签</title>\\r\\n    <link rel=\"shortcut icon\" href=\"favicon.ico\">\\r\\n</head>\\r\\n<body>\\r\\n    <button id=\"create\">创建便签</button>\\r\\n    <button id=\"remove\">清除所有便签</button>\\r\\n    <code>\\r\\n        <pre>\\r\\n        主要功能点：\\r\\n\\r\\n        - [x] 1、创建、删除、移动、删除便签\\r\\n\\r\\n        - [x] 2、保存到`localstorage`\\r\\n\\r\\n        - [x] 3、清除所有便签\\r\\n\\r\\n        - [x] 4、拖拽范围限制在可视区\\r\\n\\r\\n        - [x] 5、改用webpack 4构建\\r\\n\\r\\n        - [x] 6、加入less、eslint、babel等\\r\\n\\r\\n        - [x] 7、加入husky依赖，precommit 钩子校验\\r\\n        </pre>\\r\\n    </code>\\r\\n    <!-- 2018-05-12 21:56:30 luoxiaochuan 注释，验证是否会去除注释 -->\\r\\n</body>\\r\\n</html>';\nreturn __p\n})();}}"
+          "source": "var _ = require(\"!!../node_modules/_lodash@4.17.10@lodash/lodash.js\");module.exports = function (templateParams) { with(templateParams) {return (function(data) {\nvar __t, __p = '';\n__p += '<!DOCTYPE html>\\n<html lang=\"en\">\\n<head>\\n    <meta charset=\"UTF-8\">\\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\\n    <title>便签</title>\\n    <link rel=\"shortcut icon\" href=\"favicon.ico\">\\n</head>\\n<body>\\n    <button id=\"create\">创建便签</button>\\n    <button id=\"remove\">清除所有便签</button>\\n    <code>\\n        <pre>\\n        主要功能点：\\n\\n        - [x] 1、创建、删除、移动、删除便签\\n\\n        - [x] 2、保存到`localstorage`\\n\\n        - [x] 3、清除所有便签\\n\\n        - [x] 4、拖拽范围限制在可视区\\n\\n        - [x] 5、改用webpack 4构建\\n\\n        - [x] 6、加入less、eslint、babel等\\n\\n        - [x] 7、加入husky依赖，precommit 钩子校验\\n        </pre>\\n    </code>\\n    <!-- 2018-05-12 21:56:30 luoxiaochuan 注释，验证是否会去除注释 -->\\n</body>\\n</html>';\nreturn __p\n})();}}"
         },
         {
-          "id": "qGCc",
-          "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.4.17.10@lodash\\lodash.js",
-          "name": "./node_modules/.4.17.10@lodash/lodash.js",
+          "id": "nQuZ",
+          "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_lodash@4.17.10@lodash/lodash.js",
+          "name": "./node_modules/_lodash@4.17.10@lodash/lodash.js",
           "index": 1,
           "index2": 2,
           "size": 539836,
@@ -1442,23 +1422,23 @@
           "chunks": [
             0
           ],
-          "issuer": "F:\\git-source\\github\\sticky-notes\\node_modules\\.3.2.0@html-webpack-plugin\\lib\\loader.js!F:\\git-source\\github\\sticky-notes\\src\\index.html",
-          "issuerId": "J4lA",
-          "issuerName": "./node_modules/.3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
+          "issuer": "/home/sunong/git-source/github/sticky-notes/node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!/home/sunong/git-source/github/sticky-notes/src/index.html",
+          "issuerId": "Y0Zr",
+          "issuerName": "./node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
           "issuerPath": [
             {
-              "id": "J4lA",
-              "identifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.3.2.0@html-webpack-plugin\\lib\\loader.js!F:\\git-source\\github\\sticky-notes\\src\\index.html",
-              "name": "./node_modules/.3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
+              "id": "Y0Zr",
+              "identifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!/home/sunong/git-source/github/sticky-notes/src/index.html",
+              "name": "./node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
               "profile": {
-                "factory": 80,
-                "building": 50
+                "factory": 64,
+                "building": 17
               }
             }
           ],
           "profile": {
-            "factory": 10,
-            "building": 400
+            "factory": 2,
+            "building": 149
           },
           "failed": false,
           "errors": 0,
@@ -1466,13 +1446,13 @@
           "assets": [],
           "reasons": [
             {
-              "moduleId": "J4lA",
-              "moduleIdentifier": "F:\\git-source\\github\\sticky-notes\\node_modules\\.3.2.0@html-webpack-plugin\\lib\\loader.js!F:\\git-source\\github\\sticky-notes\\src\\index.html",
-              "module": "./node_modules/.3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
-              "moduleName": "./node_modules/.3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
+              "moduleId": "Y0Zr",
+              "moduleIdentifier": "/home/sunong/git-source/github/sticky-notes/node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!/home/sunong/git-source/github/sticky-notes/src/index.html",
+              "module": "./node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
+              "moduleName": "./node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js!./src/index.html",
               "type": "cjs require",
-              "userRequest": "!!../node_modules/.4.17.10@lodash/lodash.js",
-              "loc": "1:8-62"
+              "userRequest": "!!../node_modules/_lodash@4.17.10@lodash/lodash.js",
+              "loc": "1:8-69"
             }
           ],
           "usedExports": true,
