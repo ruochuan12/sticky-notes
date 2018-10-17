@@ -38,7 +38,7 @@ app.utils = {
 				return '0' + num;
 			}
 		}
-		return year + '-' + to2bit(month) + '-' + to2bit(date) + ' ' + to2bit(hour) + ':' + to2bit(minute) + ':' + to2bit(second);
+		return `${year}-${to2bit(month)}-${to2bit(date)} ${to2bit(hour)}:${to2bit(minute)}:${to2bit(second)}`;
 	},
 	/**
 	 * 绑定事件
@@ -228,7 +228,7 @@ app.store = {
 			}
 			// console.log('mousedown');
 		};
-		on($('.u-bar', that.note), 'mousedown', handleMousedown);
+		on(that.note, 'mousedown', handleMousedown);
 		var inputTimer;
 		// 便签的 input 输入事件
 		var editNote = $('.u-edit', that.note);
